@@ -1,3 +1,20 @@
+Skip to content
+
+.clickme {
+        background-color: red;
+        border: none;
+        color: black;
+        width:100%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 300px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+	z-index:1000;
+      }
+
 .item img {
     border-radius: 3%;
     margin-left: 20px
@@ -45,7 +62,7 @@
 	overflow: hidden;
 	background-color: transparent;
 	font-family: Arial;
-	z-index: 3;
+	z-index: 1;
 }
 
 .topnav a {
@@ -55,7 +72,7 @@
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 20px;
 	color: red;
 }
 
@@ -107,6 +124,16 @@ p {
 	font-family: Arial;
 }
 
+h3 { 
+	color: red;
+	font-family: Arial;
+}
+
+h2 { 
+	color: red;
+	font-family: Arial;
+}
+
 /* latin */
 @font-face {
 	font-family: 'Orbitron';
@@ -118,7 +145,7 @@ p {
 
 #clock {
 	font-family: 'Orbitron', sans-serif;
-	color: #66ff99;
+	color: #29910f;
 	font-size: 56px;
 	text-align: center;
 	padding-top: 40px;
@@ -233,3 +260,4 @@ color: red;
 font-family:Arial;
 }
     
+
