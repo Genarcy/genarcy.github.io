@@ -1,40 +1,84 @@
+Skip to content
+
 <!DOCTYPE html>
 <head>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620758113142384" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="/css/index.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/css/index.css" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <title>Update log</title>
-  </head>
-  <body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+
+    body {
+      background-color: black;
+      font-family: Arial;
+      color: red;
+
+      .typing-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #feature-text {
+          margin-left: 8px;
+        }
+
+        .input-cursor {
+          display: inline-block;
+          width: 2px;
+          height: 30px;
+          background-color: white;
+          margin-left: 8px;
+          animation: blink .6s linear infinite alternate;
+        }
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+
+        40% {
+          opacity: 1;
+        }
+
+        60% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  </style>
+</head>
+<body>
   <div class="topnav">
     <div class="nav">
-    <a href="/index.html">Home</a>
-    <a href="/Pages/games.html">Games</a>
-    <a href="/Pages/proxies.html">Proxies</a>
-    <a href="/Pages/movies.html">Movies</a>
-    <a href="/Pages/chat.html">Chat</a>
-    <a href="/Pages/About.html">About</a>
-    <a href="/Pages/Credits.html">Credits</a>
-    <a href="/Pages/bookmarks.html">Bookmarks</a>
-    <a href="/Pages/extras.html">Extras</a>
-    <a href="/Pages/memes.html">Memes</a>
-    <a href="/Pages/update.html">Updatelog</a>
-    <input type="text" placeholder="Search..">
+      <a href="/index.html">Home</a>
+      <a href="/Pages/games.html">Games</a>
+      <a href="/Pages/proxies.html">Proxies</a>
+      <a href="/Pages/movies.html">Movies</a>
+      <a href="/Pages/chat.html">Chat</a>
+      <a href="/Pages/About.html">About</a>
+      <a href="/Pages/bookmarks.html">Bookmarks</a>
+      <a href="/Pages/update.html">Updatelog</a>
+      <input type="text" placeholder="Search..">
+    </div>
+  </div>
+  <body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <div style="background-color:black; padding:20px; font-family: Arial;">
+      <h1>Update Log</h1>
+      <div class="typing-container" style="font-size: 30px;">
+        <span id="sentence" class="sentence"></span>
+        <span id="feature-text"></span>
+        <span class="input-cursor"></span>
       </div>
-  </div>
-  <div style="background-color:black; padding:20px;">
-    <h2 style="font-family:Arial; color:red;">Update log</h2>
-    <p>Reuploaded the website and changed the name to Genarcy(smileman52)(9/10/22)</p>
-    <p>0rc4 added discord to the webiste. Its in the extra page.(smileman52)(7/25/22)</p> 
-    <p>lots of changes to the home screen and n-gon is hosted on the website.(smileman52)(7/19/22)</p>
-    <p>Added Alot of more games...Check them out(0rc4)(7/6/22)</p>
-    <p>I added cyclonehacks's minecraft server. its on the games tab(smileman52)(7/5/22)</p>
-    <p>Added some new games with gfiles. Thank to Rena for giving them to me.(0rc4)(6/30/22)</p>
-    <p>Im now back and updated Private policy and terms and conditions. (orca)(6/25/2022)</p>
-    <p>Being out for a couple of days for personal reasons... Smile man on charge (0rc4)(6/22/2022)</p>
-    <p>Sorry Guys 1v1.LOL can't be hosted. Sorry. (smileman52)(6/20/2022)</p>
-    <p>Made the game 1 be hosted on the website. (smileman52)(6/12/2022)</p>
-    <p>Adding more games soon</p>
-  </div>
+    </div>
+    <script src="/js/text2.js"></script>
   </body>
-  </html>
+</html>
+
+cyclonehacks – Deployment Source
