@@ -11,4 +11,4 @@
 <br>[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Genarcy)](https://github.com/anuraghazra/github-readme-stats)
 
 ### Contributors 
-<img src="https://contrib.rocks/image?repo=CycloneHacks/CycloneHacks.github.io" />
+<img src="https://contrib.rocks/image?repo=Genarcy/Genarcy.github.io" />
