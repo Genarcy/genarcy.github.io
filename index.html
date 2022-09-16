@@ -62,10 +62,35 @@
       </script>
     
     </head>
-    <a onclick="document.getElementById('aAudio').play();">
-     <img src="/images/Speaker-1.png" width="50px" length="50">
-</a>
+   <style>
+body {
+  a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
+
+body {
+  a {
+    color: black;
+    &:hover {
+      color: #555;
+    }
+  }
+}
+.container {
+  margin: 0 auto;
+}
+    </style>
+
+	
     <body>
+      <div class="container">
+    <a href="javascript:playSound('Genarcy');"><img src="https://genarcy.github.io/images/Speaker-1.png" width="50px" length+="50"alt="Genarcy" /></a><br/>
+    <a href="javascript:playSound('Genarcy')">Genarcy</a>
+  </div>
+  <audio id="Genarcy"  src="https://genarcy.github.io/audio/Genarcy.mp3" preload="auto"></audio>
+
       <div id="particles-js"></div>
       <div id="wrapper">
         <div class="topnav">
