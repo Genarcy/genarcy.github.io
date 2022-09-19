@@ -77,13 +77,13 @@
 
 .topnav a:hover {
 	background-color: transparent;
-	color: red;
+	color: orange;
 	
 }
 
 .topnav a.active {
 	background-color: transparent;
-	color: red;
+	color: orange;
 	
 }
 
