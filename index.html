@@ -40,7 +40,15 @@
 	    <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-341L6V95QH"></script>
      
-    
+    <script type="text/javascript">
+	var msgArr = new Array();
+	msgArr[0] = "Hello did you know that 0rca is a human being?";
+	msgArr[1] = "Message 2...";
+	msgArr[2] = "Message 3..."
+	window.onload = function () {
+		document.getElementById("msgDiv").innerHTML = msgArr[Math.floor(Math.random()*msgArr.length)];
+	}
+</script>
     </head>
    <style>
 #Word {
