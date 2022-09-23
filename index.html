@@ -6,7 +6,9 @@
     <head>
 <style>
 #randomtext {
-  color: green;
+  color: orange;
+  text-size: 50;
+  text-align: center;
 }
 </style>
       <script>
@@ -86,21 +88,7 @@ text-align: center;}
 
 	
     <body>
-     <div id='randomtext'></div>
-<script type="text/javascript">
-const textInsert = document.getElementById('randomtext');
-var sentences = new Array(
-"Best site in rsms",
-"Please give us game ideas!",
-"On currents :))",
-"Games for fun?",
-"No u",
-"Pls die",
-"HUH?"
-);
-console.log(Math.round(Math.random() * 7));
-textInsert.innerHTML = sentences[Math.round(Math.random() * sentences.length)];
-</script>
+     
 	    <div class="container">
     <a href="javascript:playSound('Genarcy');"><img src="https://genarcy.github.io/images/Speaker-1.png" width="50px" length="50px"alt="Genarcy" /></a><a href="javascript:playSound('Genarcy')" id="Word">Genarcy</a>
     
@@ -122,9 +110,21 @@ textInsert.innerHTML = sentences[Math.round(Math.random() * sentences.length)];
           </div>
         </div>
         <div id="clock"></div>
-	 <script type="text/javascript">
-document.write(sentences[Math.floor(Math.random()*sentences.length)]);
-</script>     
+	 <div id='randomtext'></div>
+<script type="text/javascript">
+const textInsert = document.getElementById('randomtext');
+var sentences = new Array(
+"Best site in rsms",
+"Please give us game ideas!",
+"On currents :))",
+"Games for fun?",
+"No u",
+"Pls die",
+"HUH?"
+);
+console.log(Math.round(Math.random() * 7));
+textInsert.innerHTML = sentences[Math.round(Math.random() * sentences.length)];
+</script>
         <script src="/js/clock.js"></script>
         <script src="/js/jquery.min.js"></script>
         <script src="/js/particles.js"></script>
