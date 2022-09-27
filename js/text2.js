@@ -11,10 +11,11 @@ const carouselText = [
   {text: "Being out for a couple of days for personal reasons... Smile man on charge (0rc4)(6/22/2022)", color: "red"},
   {text: "Sorry Guys 1v1.LOL can't be hosted. Sorry. (smileman52)(6/20/2022) ", color: "red"},
   {text: "Made the game 1 be hosted on the website. (smileman52)(6/12/2022) ", color: "red"},
-  {text: "Adding more games soon", color: "red"}
+  {text: "Adding more games soon", color: "red"},
+  {text: "Changed the name of the website to Genarcy(idk why). (smileman52)(7/27/22)", color: "red"},
+]
 
 // use this a a templete  {text: "text", color: "red"}
-]
 
 $( document ).ready(async function() {
   carousel(carouselText, "#feature-text")
