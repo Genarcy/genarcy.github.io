@@ -1,5 +1,3 @@
-Skip to content
-
 const carouselText = [
   {text: "I changed a lot of the website. the discord is now on the chat page(smileman52)(7/28/22)", color: "red"},
   {text: "0rc4 added discord to the webiste. Its in the extra page.(smileman52)(7/25/22)", color: "red"},
