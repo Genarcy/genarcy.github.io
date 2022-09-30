@@ -42,11 +42,11 @@ body {
   margin-top: 0px;
   border-style: none;
   position: absolute;
-  background: url(/projects/soundboard/img/button.png) no-repeat;
+  background: url(/Pages/games/soundboard/img/button.png) no-repeat;
   cursor: pointer;
 }
 .small-button:active {
-  background: url(/projects/soundboard/img/button-pressed.png) no-repeat;
+  background: url(/Pages/games/soundboard/img/button-pressed.png) no-repeat;
   cursor: progress;
 }
 .small-button-background {
@@ -60,7 +60,7 @@ body {
   width: 94px;
   height: 89px;
   margin-bottom: 5px;
-  background: url(/projects/soundboard/img/button-shadow.png) no-repeat;
+  background: url(/Pages/games/soundboard/img/button-shadow.png) no-repeat;
 }
 .circle {
   border-radius: 50%;
