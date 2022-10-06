@@ -74,7 +74,42 @@
           cursor: pointer;
           border-radius: 12px;
         }
-        
+       
+	    
+	    * {
+  margin: 0;
+  padding: 0
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  font: 900 35vmin/35vh cookie, cursive;
+  text-align: center;
+  color: #adf175;
+}
+
+header > div {
+  min-height: 100%;
+}
+
+.foreground {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #adf175;
+  color: white;
+  clip-path: polygon(30% 0, 100% 100%, 100% 0);
+}
+
+h1 {
+  position: fixed;
+}
+	    
+
         .center-screen {
           text-align: center;
           font-family: "Arial";
@@ -90,8 +125,18 @@
             <div class="nav"> <a href="/index.html">Home</a> <a href="/Pages/games.html">Games</a> <a href="/Pages/proxies.html">Proxies</a> <a href="/Pages/movies.html">Movies</a> <a href="/Pages/chat.html">Chat</a> <a href="/Pages/About.html">About</a> <a href="/Pages/bookmarks.html">Bookmarks</a> <a href="/Pages/update.html">Updatelog</a> </div>
         </div>
         <div class="center-screen"> <button class="button" onclick="alert('Hello this is the creator. Please Have fun with these games and also Scroll down to request any games in the comment box. HAVE FUN :)')"> Messege from the creator's </button>
-            <h1 style="font-family: 'Silkscreen', cursive; text-align:center;">Games</h1>
-            <ul id="Games">
+            
+		<header>
+             <div>
+		<h1 style="font-family: 'Silkscreen', cursive; text-align:center;">Games</h1>
+                </div>
+    <div class="foreground">
+	    		<h1 style="font-family: 'Silkscreen', cursive; text-align:center;">Games</h1>
+    </div>
+</header>
+
+
+		<ul id="Games">
                 <div class="flex-container">
                     <div>
                         <div class="card"> <img class="thumb" width="300" height="300" src="/images/1.png" alt="1" />
