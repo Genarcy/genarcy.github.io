@@ -1,5 +1,5 @@
 const carouselText = [
-  {text: "Added more games to our website and change the theme. next its gonna be blue heheh.(0rca)(10/18/22)", color: "orange"},
+  {text: "Added more games to our website and change the theme. next its gonna be blue heheh.(0rca)(10/18/22)", color: "red"},
   {text: "Changed the name of the website to Genarcy. (smileman52)(7/27/22)", color: "red"},
   {text: "I changed a lot of the website. the discord is now on the chat page(smileman52)(7/28/22)", color: "red"},
   {text: "0rc4 added discord to the webiste. Its in the extra page.(smileman52)(7/25/22)", color: "red"},
