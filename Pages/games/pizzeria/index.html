@@ -1,173 +1,64 @@
 <!DOCTYPE html>
-
+<html lang="en">
+ 
 <head>
-	<meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html; charset=UTF8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#382C2A">
-	<meta name="viewport"
-		content="height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
-	<title>Papa Freezeria</title>
-
-	<script src="poki-sdk.js"></script>
-	<script type="text/javascript" src="js/loader.js"></script>
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
-
-		canvas {
-			outline: none
-		}
-
-		html,
-		body,
-		#container {
-			margin: 0;
-			overflow: hidden;
-			width: 100%;
-			height: 100%;
-			background-color: white;
-		}
-
-		#splash {
-			position: absolute;
-			visibility: hidden;
-			z-index: 10;
-		}
-
-		#splash__image {
-			position: absolute;
-			background-size: contain;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-image: url("assets/todo.jpg");
-			visibility: visible;
-			transition: all 0.5s;
-			z-index: 10;
-		}
-
-		#progress__root {
-			position: absolute;
-		}
-
-		#progress__line {
-			width: 0;
-			height: 100%;
-			transition: all 0.5s;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="">
+    <meta name="description" content="Play your favorite online games free now!">
+    <meta name="language" content="English">
+    <title>Papa's Pizzeria</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/socials/.png" />
+    <link rel="mask-icon" type="" href="/assets/img/socials/.png" color="#111" />
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/contentpage.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <noscript>Your browser doesn't have JavaScript enabled. Please enable JavaScript or switch to a browser that
+        supports it.</noscript>
+ <style>
+     html { 
+  scroll-behavior: smooth; 
+}
+      	body {
+        	font-family: 'Syne', sans-serif;
+          background-color: #000000;
+      }
+  </style>
 </head>
-
+ 
 <body>
-	<div id="splash__image">
-		<div id="progress__root">
-			<div id="progress__line"></div>
-		</div>
-	</div>
-
-	<script>
-
-		window.addEventListener("load", () => {
-
-
-
-			PokiSDK.init().then(
-				() => {
-					// successfully initialized
-					onPokiInitComplete(false);
-				}
-			).catch(
-				() => {
-					// successfully initialized but the user has adblock
-					onPokiInitComplete(true);
-				}
-			);
-
-			let config;
-
-			
-config = {
-    "key": "papa_pizzeria",
-    "title": "Papa Pizzeria",
-    "filename": "papa_pizzeria_sdk",
-    "pokiSDK": true,
-    "debugPoki": false,
-    "showFPS": false,
-    "debug": false,
-    "splash": "assets/todo.jpg",
-    "start": null,
-    "width": 500,
-    "height": 374,
-    "x": 0,
-    "y": 0,
-    "w": "100%",
-    "h": "100%",
-    "stageScaleMode": null,
-    "stageAlign": null,
-    "progressParserWeigth": 1,
-    "progress": {
-        "direction": "lr",
-        "back": "#fff",
-        "line": "#a24f17",
-        "rect": [
-            0.1,
-            0.7,
-            0.8,
-            0.025
-        ]
-    },
-    "skipFramesOfScene": null,
-    "buttonPokiSDKActions": null,
-    "retryButtonIDS": null,
-    "retryButtonAction": null,
-    "actionOnStop": null,
-    "actionWhenRetryButtonEncountered": null,
-    "filenameNoSdk": "papa_pizzeria",
-    "binary": [
-        {
-            "name": "fonts.swf",
-            "path": "assets/fonts.swf",
-            "size": 30506
-        },
-        {
-            "name": "papa_pizzeria_sdk",
-            "path": "assets/papa_pizzeria_sdk.swf",
-            "size": 3159863,
-            "resourceType": "GAME"
-        }
-    ],
-    "runtime": "js/PapaSeries.js"
-};
-
-			
-			PokiSDK.setDebug(config.debugPoki);
-
-			Loader.init(config);
-
-			let onPokiInitComplete = (adBlocked) => {
-
-				PokiSDK.adBlocked = adBlocked;
-				PokiSDK.gameLoadingStart();
-
-				Loader.runGame((fill) => {
-					PokiSDK.gameLoadingProgress({
-						percentageDone: fill,
-						kbLoaded: 0,
-						kbTotal: 0,
-						fileNameLoaded: "",
-						filesLoaded: 0,
-						filesTotal: 0
-					});
-				}, (instance) => {
-					PokiSDK.gameLoadingFinished();
-				})
-			}
-		})
-
-	</script>
+    <div class="content-wrapper">
+        <div class="main-content">
+            <section class="content">
+                <div class="content-container">
+                    <iframe src="/gfile/away-player-embed/example/pizzeria" allowfullscreen scrolling="no" ></iframe>
+                    <div class="bar">
+                        <div class="bar-left">
+                            <h1 id="content-title">Papa's Pizzeria</h1>
+                      
+                           
+                        </div>
+                        <button onclick="iFullscreen()">
+                            <i class="fas fa-expand fa-2x"></i>
+                        </button>
+                    </div>
+                
+                </div>
+ 
+                
+                   
+            </section>
+         
+           
+        </div>
+ 
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/main.js"></script>
+ 
+    <script src="/contentpage.js"></script>
+ 
 </body>
-
+ 
 </html>
