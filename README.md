@@ -1,4 +1,4 @@
-# Cyclone Games
+# Genarcy Games
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=10BEF7&lines=Hey+its+0rca+and+smileman52;We+are+the+creators+of+this+site!;Join+our+discord!)](https://git.io/typing-svg)
 
