@@ -32,11 +32,26 @@
         }
       </style>
       <script>
-        if (window.location.href == "about:blank") {
+        function open(){
+          win=window.open(); 
+          win.document.body.style.margin="0";
+          win.document.body.style.height="100vh";
+          var iframe=win.document.createElement("iframe");
+          iframe.style.border="none"; 
+          iframe.style.width="100%"; 
+          iframe.style.height="100%"; 
+          iframe.style.margin="0"; 
+          iframe.referrerpolicy="no-referrer"; 
+          iframe.allow="fullscreen"; 
+          iframe.src=window.location.href; 
+          win.document.body.appendChild(iframe); 
+        }
+        
+        if (window.top.location.href == "about:blank") {
           document.getElementById("buttonclick").remove();
         };
       </script>
-      <button class="clickme" id="buttonclick" onclick=" win=window.open(); win.document.body.style.margin="0" ;win.document.body.style.height="100vh" ;var iframe=win.document.createElement("iframe");iframe.style.border="none" ; iframe.style.width="100%" ; iframe.style.height="100%" ; iframe.style.margin="0" ; iframe.referrerpolicy="no-referrer" ; iframe.allow="fullscreen" ; iframe.src=window.location.href ; win.document.body.appendChild(iframe); ">CLICK ME FOR ABOUT BLANK</button>
+      <button class="clickme" id="buttonclick" onclick="open()">CLICK ME FOR ABOUT BLANK</button>
       <meta name=" google-site-verification" content="SfAB3aHhmFlzgrFWfmEtNb6zA5pTXilS6X0PN1kQY-k" />
       <title>Genarcy</title>
       <meta property="0rca" content=”/images/0rc4.jpg” />
