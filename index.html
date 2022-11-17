@@ -43,10 +43,6 @@
           iframe.src=window.location.href; 
           win.document.body.appendChild(iframe); 
         }
-        
-        if (window.top.location.href == "about:blank") {
-          document.getElementById("buttonclick").remove();
-        };
       </script>
       <button class="clickme" id="buttonclick" onclick="openinblank()">CLICK ME FOR ABOUT BLANK</button>
       <meta name="google-site-verification" content="SfAB3aHhmFlzgrFWfmEtNb6zA5pTXilS6X0PN1kQY-k" />
@@ -90,7 +86,11 @@
         </div>
         <div id="clock"></div>
         <div id='randomtext'></div>
-        <script type="text/javascript">
+        <script type="text/javascript">      
+           if (window.top.location.href == "about:blank") {
+              document.getElementById("buttonclick").remove();
+           }  
+            
           var sentences = new Array("Please give us game request!", "Games for fun?", "noah is dumb", "yes", "Shoutout to ryan", "Request for games plz", "who am i?", "No u", "Pwease tell your friends", "https://discord.gg/UJ5NszstAv", "0rca#7089", "your mom", "did you know Avocados are a fruit, not a vegetable?", "did you know 0rca is human!?", "HUH?", "smileman52 wus here", "UwU", "If a cabby drives a cab, then who drives a bus?","What has a neck but no head?","Volley ball sucks hehe","duke");
           console.log(Math.round(Math.random() * 7));
           document.getElementById('randomtext').innerHTML = sentences[Math.round(Math.random() * sentences.length)]; 
