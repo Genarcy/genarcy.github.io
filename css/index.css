@@ -73,18 +73,18 @@
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 20px;
-	color: orange;
+	color: #D2042D;
 }
 
 .topnav a:hover {
 	background-color: transparent;
-	color: orange;
+	color: #D2042D;
 	
 }
 
 .topnav a.active {
 	background-color: transparent;
-	color: orange;
+	color: #D2042D;
 	
 }
 
@@ -145,7 +145,7 @@ h2 {
 
 #clock {
 	font-family: 'Orbitron', sans-serif;
-	color: orange;
+	color: #D2042D;
 	font-size: 56px;
 	text-align: center;
 	padding-top: 40px;
