@@ -1,4 +1,5 @@
 
+/*Christmas one*/
 particlesJS("particles-js", {"particles":{"number":{"value":76,"density":{"enable":true,
 "value_area":1420.4657549380909}
 },
@@ -30,13 +31,9 @@ particlesJS("particles-js", {"particles":{"number":{"value":76,"density":{"enabl
 
 
 
+/*Normal Particles here*/
 
 
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
 /*
 particlesJS.load('particles-js', 'particles.json', function() {
   console.log('particles.js loaded - callback');
