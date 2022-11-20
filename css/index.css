@@ -234,8 +234,8 @@ color: white;
     transform: scale(1);
     opacity: 1;
     -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
-    transition: opacity .8s ease, transform 1.4s ease
-    z-index: -1;
+    transition: opacity .8s ease, transform 1.4s ease 
+	z-index: -1;
 }
 
 #particles-js 
