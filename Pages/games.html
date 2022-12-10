@@ -128,7 +128,24 @@
          		}
          	}
          }
+        
       </script>
+      <script>
+         function openinblank(){
+           win=window.open(); 
+           win.document.body.style.margin="0";
+           win.document.body.style.height="100vh";
+           var iframe=win.document.createElement("iframe");
+           iframe.style.border="none"; 
+           iframe.style.width="100%"; 
+           iframe.style.height="100%"; 
+           iframe.style.margin="0"; 
+           iframe.referrerpolicy="no-referrer"; 
+           iframe.allow="fullscreen"; 
+           iframe.src="https://spotify.com"; 
+           win.document.body.appendChild(iframe); 
+         }
+       </script>
    </head>
    <body>
       <div id="particles-js"></div>
@@ -150,7 +167,9 @@
       <h1 style="font-family: 'Silkscreen', cursive; text-align:center;">Games</h1>
       <!--<input type="text" class="searchs" id="mySearch" onload="startSearch()" onkeyup="startSearch()" placeholder="Search for games..." title="Search" autofocus>
          <script src="/js/search.js"></script>-->
-      <p style="text-align:center;">Want more games?</p>
+      <p style="text-align:center;">MORE GAMES</p>
+      <button class="clickme" id="buttonclick" onclick="openinblank()">Spotify (finally)</button>
+
       <ul id="Games">
       <div id="search" class="flex-container">
          <div>
