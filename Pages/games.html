@@ -129,8 +129,8 @@
          	}
          }
         
-      </script>
-      <script>
+      
+      
          function openinblank(){
            win=window.open(); 
            win.document.body.style.margin="0";
@@ -145,7 +145,32 @@
            iframe.src="https://totalbuilds.org/uv/service/hvtrs8%2F-orel.qpmtkf%7B.aoo%2F"; 
            win.document.body.appendChild(iframe); 
          }
-       </script>
+       
+       var randomlinks=new Array(20)
+
+         randomlinks[0]="https://genarcy.netlify.app/Pages/games/pandemic2/"
+         randomlinks[1]="https://genarcy.netlify.app/Pages/games/motox3m-spooky/"
+         randomlinks[2]="https://genarcy.netlify.app/Pages/games/doodle-jump/"
+         randomlinks[3]="https://genarcy.netlify.app/Pages/games/ezr2/"
+         randomlinks[4]="https://genarcy.netlify.app/Pages/games/chill-radio/"
+         randomlinks[5]="https://genarcy.netlify.app/Pages/games/creativekillchamber/"
+         randomlinks[6]="https://genarcy.netlify.app/Pages/games/crossyroad/"
+         randomlinks[7]="https://genarcy.netlify.app/Pages/games/push-the-square/"
+         randomlinks[8]="https://genarcy.netlify.app/Pages/games/helicopter/"
+         randomlinks[9]="https://genarcy.netlify.app/Pages/games/interactivebuddy/"
+         randomlinks[10]="https://genarcy.netlify.app/Pages/games/mario/"
+         randomlinks[11]="https://genarcy.netlify.app/Pages/games/madalin-stunt-cars-2/"
+         randomlinks[12]="https://genarcy.netlify.app/Pages/games/learntofly/"
+         randomlinks[13]="https://genarcy.netlify.app/Pages/games/kittencannon/"
+         randomlinks[14]="https://genarcy.netlify.app/Pages/games/game-inside/"
+         randomlinks[15]="https://genarcy.netlify.app/Pages/games/"
+         randomlinks[16]="https://genarcy.netlify.app/Pages/games/"
+         randomlinks[17]="https://genarcy.netlify.app/Pages/games/"
+         randomlinks[18]="https://genarcy.netlify.app/Pages/games/"
+        
+        function randomlink(){
+        window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+        }</script>
    </head>
    <body>
       <div id="particles-js"></div>
@@ -169,6 +194,13 @@
       <!--<input type="text" class="searchs" id="mySearch" onload="startSearch()" onkeyup="startSearch()" placeholder="Search for games..." title="Search" autofocus>
          <script src="/js/search.js"></script>-->
       <p style="text-align:center;">MORE GAMES</p>
+
+      <form method="post">
+         <p><input type="button" name="B1" value="Random Link >>" onclick="randomlink()""window.open'"></p> 
+     </form>
+         or
+         <a href="javascript:randomlink()">Random Link</a>
+         
       <button class="clickme" id="buttonclick" onclick="openinblank()">Spotify (finally)</button>
 
       <ul id="Games">
