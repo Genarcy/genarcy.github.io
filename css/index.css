@@ -1,9 +1,9 @@
 
 .clickme {
-        background-color: red;
+        background-color: rgb(120, 4, 4);
         border: none;
-        color: black;
-        width:100%;
+        color: rgb(42, 4, 4);
+        width: 50px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
