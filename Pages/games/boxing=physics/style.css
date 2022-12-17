@@ -1,0 +1,95 @@
+
+/****************************************
+  ==== RESETS
+****************************************/
+
+html,body,div,canvas { margin: 0; padding: 0; }
+::-moz-selection { color: #333; text-shadow: none; }
+::selection {  color: #333; text-shadow: none; }
+.clear:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clear { display: inline-table; clear: both; }
+/* Hides from IE-mac \*/ * html .clear { height: 1%; } .clear { display: block; } /* End hide from IE-mac */
+
+/****************************************
+  ==== LAYOUT
+****************************************/
+
+html, body { width: 100%; height: 100%; font-family: Helvetica, Verdana, Arial, sans-serif; }
+body { }
+p.header, p.footer { display: none; }
+div.logo { width: 204px; height: 38px; float: left; background: url(logo.png) 0 0 no-repeat; position: relative; z-index: 10; }
+div.title { height: 38px; line-height: 38px; padding: 0 10px; margin: 0 1px 0 0; float: right; color: #333; text-align: right; font-size: 18px; position: relative; z-index: 10; }
+.template-wrap { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background: white; }
+.template-wrap canvas { margin: 0; position: relative; z-index: 9; box-shadow: 0 10px 30px rgba(0,0,0,0.2); -moz-box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+.fullscreen { float: right; position: relative; z-index: 10; }
+
+#background { background: #4D4D4D; position: absolute; }
+#screen { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; width: 100%; }
+#y8-logo { background-image: url(../../../../config/TemplateData/y8-logo.pngg'); width: 206px; height: 130px; margin: 0 auto; background-size: 206px 130px; }
+#progress-frame-loader { margin: 0 auto; margin-top: 10px; height: 18px; width: 141px; visibility: hidden; }
+#progress-bar-loader { height: 18px; width: 141px; margin: 0 auto; text-align: left; margin-top: -18px; }
+#progress-bar { height: 18px; }
+#message-area { color: #ffffff; width: 100%; }
+#message-area img { vertical-align: middle; }
+
+body.template .footer {
+  background: #222;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+}
+
+body.template .footer .webgl-logo,
+.title, .fullscreen {
+  background: transparent center no-repeat;
+  display: inline-block;
+  height: 100%;
+}
+
+body.template .footer .unity,
+body.template .footer .webgl {
+  box-sizing: border-box;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 46px 18px;
+  height: 40px;
+  float: left;
+  padding: 0 10px;
+  width: 66px;
+}
+
+body.template .footer .unity.enable {
+  background-image: url('unity-enable.png');
+}
+
+body.template .footer .unity.disable {
+  background-image: url('unity-disable.png');
+}
+
+body.template .footer .webgl.enable {
+  background-image: url('webgl-enable.png');
+}
+
+body.template .footer .webgl.disable {
+  background-image: url('webgl-disable.png');
+}
+
+body.template .footer .fullscreen {
+  background-image: url('maximize-icon.png');
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  box-sizing: border-box;
+  color: #fff;
+  float: right;
+  font-size: 12px;
+  padding: 0 10px 0 36px;
+  width: auto;
+}
+body.template .footer .unity.disable:hover,
+body.template .footer .webgl.disable:hover,
+body.template .footer .fullscreen:hover {
+  background-color: #3e3e3e;
+  cursor: pointer;
+}
