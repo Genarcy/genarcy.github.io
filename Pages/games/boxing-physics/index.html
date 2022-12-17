@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Boxing Physics</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
+    <script src="lib.js" type="text/javascript"></script>
+    <script src="browser_detector.js" type="text/javascript"></script>
+    <script src="sound_enabler.js" type="text/javascript"></script>
+    <script src="metrika.js" type="text/javascript"></script>
+    <script src="game.js" type="text/javascript"></script>
+    <script src="UnityProgress.js"></script>
+  <script>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "WebGLBoxingPhysics.data",
+    codeUrl: "WebGLBoxingPhysics.js",
+    memUrl: "WebGLBoxingPhysics.mem",
+  };
+</script><link rel="canonical" href="https://www.y8.com/games/boxing_physics">
+</head>
+  <body class="template">
+    <div id="container" class="container webgl-content template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" width="960" height="600"></canvas>
+      <div class="footer">
+        <div class="unity disable"></div>
+        <div class="webgl enable"></div>
+        <h1 class="game-name">Boxing Physics</h1>
+        <div class="fullscreen" onclick="SetFullscreen(1)">Maximize</div>
+      </div>
+    </div>
+  <script src="_UnityLoader.js"></script>
+</body>
+</html>
