@@ -1,37 +1,9 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Partners</title>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XWJJ5LHNR2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XWJJ5LHNR2');
-</script>
-<meta property="0rca" content=”/images/0rc4.jpg” />
-      <meta charset="UTF-8">
-      <meta name="description" content="Genarcy a unblocked G@me website made from html, css, and js. Please tell your friends about us">
-      <meta name="author" content="0rca and smileman52">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-      <link rel="stylesheet" type="text/css" href="/css/index.css"/>
-</head>
 <style>
-  html{
-    height: 100%;
-  margin: 0;
-  }
-
-body{
+body, html {
   height: 100%;
   margin: 0;
-  filter: blur(2px);
 }
 
 
@@ -60,72 +32,50 @@ hr {
   margin: auto;
   width: 40%;
 }
-
 </style>
 <body>
-    <div id="particles-js"></div>
-      <div id="wrapper">
-        <div class="topnav">
-          <div class="nav">
-            <a href="/index.html">Home</a>
-            <a href="/Pages/games.html">Games</a>
-            <a href="/Pages/chat.html">Chat</a>
-            <!--<a href="Pages/About.html">About</a>-->
-            <a href="/Pages/bookmarks.html">Bookmarks</a>
-            <!--<a href="Pages/update.html">Updatelog</a>-->
-          </div>
-        </div>
-
-        <div class="middle">
-          <h1>PARTNERS</h1>
-          <hr>
-          <p id="demo" style="font-size:30px">coming soon</p>
-        </div>
-        <div class="bottomleft">
-          <p style="text-align: center;">Uh yea partners coming soon... just gathering all of them up lol go to my discord or email me so we could partner</p>
-        </div>
 
 
+  <div class="middle">
+    <h1>PARTNERS</h1>
+    <hr>
+    <p id="demo" style="font-size:30px">coming soon</p>
+  </div>
+  <div class="bottomleft">
+    <p style="text-align: center;">Uh yea partners coming soon... just gathering all of them up lol go to my discord or email me so we could partner</p>
+  </div>
 
-
-
-
-
-
-
-<script src="/js/jquery.min.js"></script>
-<script src="/js/particles.js"></script>
-<script src="/js/app.js"></script>
-</body>
 
 <script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
   
-  // Update the count down every 1 second
-  var countdownfunction = setInterval(function() {
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
   
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-      clearInterval(countdownfunction);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-  </script>
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
 </html>
