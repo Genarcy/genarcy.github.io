@@ -130,7 +130,6 @@
           </div>
         </div>-->
         <div id="clock"></div>
-        <div id='randomtext'></div>
         <script type="text/javascript">      
            if (window.top.location.href == "about:blank") {
               document.getElementById("buttonclick").remove();
@@ -140,6 +139,7 @@
           console.log(Math.round(Math.random() * 7));
           document.getElementById('randomtext').innerHTML = sentences[Math.round(Math.random() * sentences.length)]; 
         </script>
+                <div id='randomtext'></div>
         <script src="js/clock.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/particles.js"></script>
