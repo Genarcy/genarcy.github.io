@@ -4,7 +4,7 @@ function listener(event) {
         console.log(`Ended: elapsed time is ${event.elapsedTime}`)
         let foo = document.getElementById("box");
         foo.remove();
-        document.getElementById('blank').style.animation="slide-out-blank 2s";
+        document.getElementById('blank').style.animation="slide-out-blank 1.1s";
         
         
         
