@@ -45,10 +45,7 @@
           win.document.body.appendChild(iframe); 
         }
       </script>
-         <div class="blank" id="blank"></div>
-         <div class="box" id="box">
-           <img src="/images/Normal_g.png" class="logo-intro" />
-         </div>
+        
       <meta name="google-site-verification" content="SfAB3aHhmFlzgrFWfmEtNb6zA5pTXilS6X0PN1kQY-k" />
       <title>Genarcy</title>
       <meta property="0rca" content=”https://genarcy.netlify.app/images/Christmas.png” />
@@ -63,6 +60,12 @@
       <link rel="stylesheet" type="text/css" href="css/index.css"/>
       <link rel="stylesheet" href="css/nav.css"/>
       <link rel="stylesheet" type="text/css" href="css/intro.css" />
+
+      <div class="blank" id="blank"></div>
+      <div class="box" id="box">
+        <img src="/images/Normal_g.png" class="logo-intro" />
+      </div>
+      
       <img style="left:50%" src="/images/christmas.png" alt="logo" width="400px" length="250px">
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620758113142384" crossorigin="anonymous"></script>
       <script src="js/Genarcy.js"></script>
@@ -130,6 +133,8 @@
           </div>
         </div>-->
         <div id="clock"></div>
+        <div id='randomtext'></div>
+
         <script type="text/javascript">      
            if (window.top.location.href == "about:blank") {
               document.getElementById("buttonclick").remove();
@@ -139,7 +144,6 @@
           console.log(Math.round(Math.random() * 7));
           document.getElementById('randomtext').innerHTML = sentences[Math.round(Math.random() * sentences.length)]; 
         </script>
-                <div id='randomtext'></div>
         <script src="js/clock.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/particles.js"></script>
