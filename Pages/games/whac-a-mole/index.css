@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Macondo", cursive;
+}
+
+body {
+  background: url("./game-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+button {
+  cursor: pointer;
+  background: rgb(38, 114, 38);
+  border: none;
+  border-radius: 25px;
+  height: 50px;
+  max-width: 300px;
+  width: 100%;
+  color: aliceblue;
+}

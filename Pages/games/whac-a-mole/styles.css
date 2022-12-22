@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./game-bg.jpg");
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Macondo", cursive;
+  height: 100vh;
+  overflow: hidden;
+}
+.grid {
+  /* width: 606px;
+  height: 606px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto; */
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+}
+
+.details {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  border: solid #bdbdbd 1px;
+  border-radius: 50%;
+}
+
+.mole {
+  background-image: url("mole.png");
+  background-size: cover;
+  animation: popup 0.3s;
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#hammer {
+  height: 150px;
+  position: absolute;
+  border: 0.5px solid var(--accent);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+  pointer-events: none;
+}
+
+.snap {
+  transform: translate(-50%, -50%) rotate(-45deg) !important;
+}
+
+@media (max-width: 500px) {
+  #hammer {
+    display: none;
+  }
+}
