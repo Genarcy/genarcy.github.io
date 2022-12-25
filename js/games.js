@@ -1,4 +1,4 @@
-var randomlinks=new Array(75)
+var randomlinks=new Array(100)
 
          randomlinks[0]="/Pages/games/learntofly/"
          randomlinks[1]="/Pages/games/mario/"
@@ -76,6 +76,19 @@ var randomlinks=new Array(75)
          randomlinks[73]="/Pages/games/ageofwar"
          randomlinks[74]="https://scratch.mit.edu/projects/292728003/fullscreen/"
          randomlinks[75]="/Pages/games/you-are-bezos"
+         randomlinks[76]="/Pages/games/spaceinvaders/"
+         randomlinks[77]="/Pages/games/steal-this-election/"
+         randomlinks[78]="/Pages/games/temple-run-2/"
+         randomlinks[79]="/Pages/games/tic-tac-toe/"
+         randomlinks[80]="/Pages/games/towermaster/"
+         randomlinks[81]="/Pages/games/tyronetetris/"
+         randomlinks[82]="/Pages/games/vex6/"
+         randomlinks[83]="/Pages/games/whac-a-mole/"
+         randomlinks[84]="/Pages/games/wordle/"
+         randomlinks[85]="/Pages/games/boxing-physics/index.html"
+         randomlinks[86]="#"
+
+
 
 
 
