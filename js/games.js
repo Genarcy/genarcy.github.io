@@ -87,6 +87,11 @@ var randomlinks=new Array(100)
          randomlinks[84]="/Pages/games/wordle/"
          randomlinks[85]="/Pages/games/boxing-physics/index.html"
          randomlinks[86]="/Pages/games/retrohaunt/"
+         randomlinks[87]="/Pages/games/pong/"
+         randomlinks[88]="#"
+
+
+
 
 
 
