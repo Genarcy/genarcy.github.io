@@ -89,6 +89,13 @@ var randomlinks=new Array(100)
          randomlinks[86]="/Pages/games/retrohaunt/"
          randomlinks[87]="/Pages/games/pong/"
          randomlinks[88]="#"
+         randomlinks[89]="#"
+         randomlinks[90]="#"
+         randomlinks[91]="#"
+         randomlinks[92]="#"
+         randomlinks[93]="#"
+         randomlinks[94]="#"
+
 
 
 
