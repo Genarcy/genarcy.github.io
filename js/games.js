@@ -90,11 +90,26 @@ var randomlinks=new Array(100)
          randomlinks[87]="/Pages/games/pong/"
          randomlinks[88]="/Pages/games/pokey-stick/"
          randomlinks[89]="/Pages/games/picky-package/"
-         randomlinks[90]="#"
+         randomlinks[90]="/Pages/games/papery-planes/"
          randomlinks[91]="#"
          randomlinks[92]="#"
          randomlinks[93]="#"
          randomlinks[94]="#"
+         randomlinks[94]="#"
+         randomlinks[94]="#"
+         randomlinks[94]="#"
+         randomlinks[94]="#"
+         randomlinks[94]="#"
+         randomlinks[94]="#"
+         randomlinks[94]="#"
+         randomlinks[94]="#"
+         randomlinks[94]="#"
+         randomlinks[94]="#"
+         randomlinks[94]="#"
+         randomlinks[94]="#"
+         randomlinks[94]="#"
+         randomlinks[94]="#"
+
 
 
 
