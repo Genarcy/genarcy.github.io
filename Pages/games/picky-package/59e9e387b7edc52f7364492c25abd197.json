@@ -1,0 +1,16 @@
+{
+"companyName": "Kiemura",
+"productName": "Picky Package",
+"dataUrl": "c606fb04f1d0f87631e2b93445e35ac5.unityweb",
+"wasmCodeUrl": "9422e58b3015058179ec50ca6403d204.unityweb",
+"wasmFrameworkUrl": "59bbdd1ed17fcd80bb73e467a645c64a.unityweb",
+"asmCodeUrl": "f2c72720ba16fa5932f2b34e35939282.unityweb",
+"asmMemoryUrl": "4f3d9aba903fc66ec75ce484019339bd.unityweb",
+"asmFrameworkUrl": "0a90f9e2a95f93d596744f1d3c835dcc.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"dataUrl": "must-revalidate"}
+}
