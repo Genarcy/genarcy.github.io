@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Canvas Pong!</title>
+
+	<style>
+		body {
+			background: #00caa0;
+			position: relative;
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+		}
+
+		#pongCanvas,
+		#paddleCanvas {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		#pongCanvas {
+			background: white;
+		}
+
+		.score {
+			position: absolute;
+			top: 50vh;
+			transform: translateY(-50%);
+			font-size: 90px;
+			font-weight: bold;
+		}
+
+		#leftScore {
+			left: 20px;
+		}
+
+		#rightScore {
+			right: 20px;
+		}
+
+		.controls {
+			position: absolute;
+			top: 70vh;
+			transform: translateY(50%);
+		}
+
+		.left-controls {
+			left: 30px;
+		}
+
+		.right-controls {
+			right: 30px;
+		}
+
+		.directions {
+			position: fixed;
+			bottom: 10px;
+			text-align: center;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 20px;
+		}
+
+		#modal {
+			display: none;
+			position: absolute;
+			width: 100vw;
+			height: 100vh;
+			top: 0;
+			left: 0;
+			background: rgba(255,255,255, 0.8);
+		}
+
+		#modal .message {
+			position: relative;
+			overflow: auto;
+			text-align: center;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		#modal .main-info {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 60px;
+			line-height: 1.5;
+		}
+
+		#modal .sub-info {
+			font-size: 20px;
+		}
+	</style>
+
+	<script src="initialization.js?v=0.1"></script>
+</head>
+<body>
+	<canvas id="pongCanvas" width="1000" height="600" border="1px solid #333"></canvas>
+	<canvas id="paddleCanvas" width="1000" height="600" border="1px solid #333"></canvas>
+
+	<div id="leftScore" class="score">0</div>
+	<div class="controls left-controls">
+		<p><strong>Up:</strong> "A"</p>
+		<p><strong>Down:</strong> "Z"</p>
+	</div>
+	<div id="rightScore" class="score">0</div>
+	<div class="controls right-controls">
+		<p><strong>Up:</strong> &uarr;</p>
+		<p><strong>Down:</strong> &darr;</p>
+	</div>
+
+	<div class="directions">Press space to start and to pause.</div>
+	<div id="modal">
+		<div class="message">
+			<div class="main-info">
+				Paused
+			</div>
+			<div class="sub-info">
+				Press space bar to resume.
+			</div>
+		</div>
+	</div>
+</body>
+</html>
