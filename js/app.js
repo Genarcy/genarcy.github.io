@@ -1,6 +1,6 @@
 
-/*Christmas one*/
-particlesJS("particles-js", {"particles":{"number":{"value":76,"density":{"enable":true,
+
+/*particlesJS("particles-js", {"particles":{"number":{"value":76,"density":{"enable":true,
 "value_area":1420.4657549380909}
 },
 "color":{"value":"#fff"},
@@ -22,7 +22,7 @@ particlesJS("particles-js", {"particles":{"number":{"value":76,"density":{"enabl
     ('.js-count-particles'); update = function() { stats.begin(); stats.end(); if 
       (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) 
       { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } 
-      requestAnimationFrame(update); }; requestAnimationFrame(update);;
+      requestAnimationFrame(update); }; requestAnimationFrame(update);;*/
 
 
 
@@ -31,18 +31,15 @@ particlesJS("particles-js", {"particles":{"number":{"value":76,"density":{"enabl
 
 
 
-/*Normal Particles here*/
 
-
-/*
 particlesJS.load('particles-js', 'particles.json', function() {
   console.log('particles.js loaded - callback');
 });
-*/
+
 
 /* Otherwise just put the config content (json): */
 
-/*particlesJS('particles-js',
+('particles-js',
   
   {
     "particles": {
@@ -161,4 +158,4 @@ particlesJS.load('particles-js', 'particles.json', function() {
     }
   }
 
-);*/
+);
