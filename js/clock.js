@@ -3,15 +3,7 @@ function currentTime() {
         var hour = date.getHours();
         var min = date.getMinutes();
         var sec = date.getSeconds();
-        let session = "AM";
-        if(hh == 0){
-          hh = 12;
-      }
-      if(hh > 12){
-          hh = hh - 12;
-          session = "PM";
-       }
-
+       
         hour = updateTime(hour);
         min = updateTime(min);
         sec = updateTime(sec);
