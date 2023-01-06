@@ -3,7 +3,7 @@
         background-color: rgb(120, 4, 4);
         border: none;
         color: rgb(42, 4, 4);
-        width: 50%;
+        width: 25%;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -147,7 +147,7 @@ h2 {
 	font-family: 'Orbitron', sans-serif;
 	color: #D2042D;
 	font-size: 56px;
-	text-align: center;
+	text-align: left;
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
