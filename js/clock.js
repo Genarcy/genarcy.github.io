@@ -1,27 +1,26 @@
 function currentTime() {
-        var date = new Date(); /* creating object of Date class */
-        var hour = date.getHours();
-        var min = date.getMinutes();
-        var sec = date.getSeconds();
-       
-        hour = updateTime(hour);
-        min = updateTime(min);
-        sec = updateTime(sec);
-        document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
-        var t = setTimeout(function() {
-          currentTime()
-        }, 1000); /* setting timer */
-      }
+  let date = new Date(); 
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let ss = date.getSeconds();
+  let session = "AM";
 
-      function updateTime(k) {
-        if (k < 10) {
-          return "0" + k;
-        } else if (k > 12) {
-          return k - 12;
-        } else {
-        return k;
-        }
-      }
-      currentTime(); /* calling currentTime() function to initiate the process */
+  if(hh === 0){
+      hh = 12;
+  }
+  if(hh > 12){
+      hh = hh - 12;
+      session = "PM";
+   }
 
- 
+   hh = (hh < 10) ? "0" + hh : hh;
+   mm = (mm < 10) ? "0" + mm : mm;
+   ss = (ss < 10) ? "0" + ss : ss;
+    
+   let time = hh + ":" + mm + ":" + ss + " " + session;
+
+  document.getElementById("clock").innerText = time; 
+  let t = setTimeout(function(){ currentTime() }, 1000);
+}
+
+currentTime();
