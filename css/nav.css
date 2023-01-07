@@ -39,6 +39,8 @@
     color: darkred;
     text-decoration: none;
     padding-left: 0%;
+    position: fixed;
+
   }
   .site-navbar ul {
     margin: 0;
