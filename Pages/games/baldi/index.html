@@ -3,6 +3,8 @@
 
 <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
+    <script src="https://genarcy.netlify.app/unbed-stable/unbed.js"></script> 
+
 	<script src="baldi.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "baldi.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
