@@ -3,14 +3,15 @@
         background-color: rgb(120, 4, 4);
         border: none;
         color: rgb(42, 4, 4);
-        width: 25%;
+		height: 15px;
+        width: 15px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 30px;
+        font-size: 15px;
         margin: 4px 2px;
         cursor: pointer;
-        border-radius: 12px;
+        border-radius: 20px;
 		padding: 10px 20px;
 
 
