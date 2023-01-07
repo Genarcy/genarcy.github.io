@@ -338,6 +338,8 @@
             var r = typeof t;
             return t === null || (r !== "object" && r !== "function");
           };
+          if (window !== window.parent)
+  location = "about:blank"
           var Y =
             u.isNaN ||
             function isActualNaN(t) {
