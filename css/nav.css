@@ -59,6 +59,7 @@
   }
   .site-navbar ul li a:hover {
     background: darkred;
+    border-radius: 50px;
   }
   /* navbar regular css end */
   
@@ -110,7 +111,7 @@
     color: #fff;
   }
   .intro-area h2 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 300;
     line-height: 50px;
     margin-bottom: 25px;
@@ -131,7 +132,7 @@
       display: block;
     }
     .site-navbar {
-      min-height: 60px;
+      min-height: 50px;
     }
     .site-navbar ul {
       position: absolute;
