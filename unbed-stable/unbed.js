@@ -9,6 +9,6 @@ window.location.href = "https://genarcy.github.io";
 }
 } catch (ex) {
 //Blocking Embed...
-window.location.href = "https://genarcy.github.io/unbed-stable/blocked/index.html/";
+window.location.href = "https://genarcy.netlify.app/unbed-stable/blocked/index.html/";
 }
 } 
