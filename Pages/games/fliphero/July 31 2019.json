@@ -1,0 +1,15 @@
+{
+"companyName": "KasSanity",
+"productName": "FlipHero.io",
+"dataUrl": "July 31 2019.data.unityweb",
+"wasmCodeUrl": "July 31 2019.wasm.code.unityweb",
+"wasmFrameworkUrl": "July 31 2019.wasm.framework.unityweb",
+"asmCodeUrl": "July 31 2019.asm.code.unityweb",
+"asmMemoryUrl": "July 31 2019.asm.memory.unityweb",
+"asmFrameworkUrl": "July 31 2019.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
