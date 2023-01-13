@@ -1,0 +1,13 @@
+{
+"companyName": "GRAYPOW",
+"productName": "Crowd Drift City",
+"dataUrl": "webgl build.data.unityweb",
+"asmCodeUrl": "webgl build.asm.code.unityweb",
+"asmMemoryUrl": "webgl build.asm.memory.unityweb",
+"asmFrameworkUrl": "webgl build.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000"
+}
