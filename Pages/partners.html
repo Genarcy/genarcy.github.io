@@ -1,3 +1,4 @@
+mer....
 <!DOCTYPE html>
 <html>
   <head>
@@ -41,17 +42,45 @@ body, html {
   left: 16px;
 }
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+
 
 hr {
   margin: auto;
   width: 40%;
+}
+
+
+.container {
+  font-family: Arial;
+  padding-bottom: 200px;
+  cursor: pointer;
+  width: 50%;
+  float: left;
+
+         display: grid;
+        
+
+}
+
+.text-block {
+  position: absolute;
+
+  color: white;
+  font-size: 18px;
+  width: 50%;
+  flex-wrap: wrap;
+  border-style: inset;
+  border-width: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(29, 26, 26);
+  border-radius: 10px;
+  border-color: rgb(56, 54, 54);
+
+}
+.left{
+  float: left;
+
 }
 </style>
 <body>
@@ -71,44 +100,43 @@ hr {
 
   <div class="middle">
     <h1>PARTNERS</h1>
-    <hr>
-    <p id="demo" style="font-size:30px">coming soon</p>
+   
+  <div class="container" >
+    <div class="left">
+    <img src="/images/water.png" alt="water" style="width:100%; padding-top: 100%; padding-bottom: auto; margin-top: 150%;">
+    <div class="text-block">
+      <h4>Water Games</h4>
+      <p>A cool site made by a very young person Consider going to there server</p>
+    </div>
+    </div>
+  </div>     
+  <div class="container" >
+    <div class="left">
+
+    <img src="/images/water.png" alt="water" style="width:100%; padding-top: 100%; padding-bottom: auto;margin-top: 150%">
+    <div class="text-block">
+      <h4>Water Games</h4>
+      <p>A cool site made by a very young person Consider going to there server</p>
+    </div>
+  </div>  
   </div>
-  <div class="bottomleft">
-    <p style="text-align: center;">Uh yea partners coming soon... just gathering all of them up lol go to my discord or email me so we could partner</p>
-  </div>
+  
+  
+
+    
 
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 14, 2023 12:00:00").getTime();
 
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
 
-  // Get todays date and time
-  var now = new Date().getTime();
-  
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-  
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+
+
+
+
+
+
+
+
+
         <script src="/js/jquery.min.js"></script>
         <script src="/js/particles.js"></script>
         <script src="/js/app.js"></script>
