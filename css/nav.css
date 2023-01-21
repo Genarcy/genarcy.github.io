@@ -59,8 +59,10 @@
     text-transform: uppercase;
   }
   .site-navbar ul li a:hover {
-    background: darkred;
-    border-radius: 50px;
+    @supports (-webkit-text-stroke: 1px black){
+      nav a:hover { 
+        -webkit-text-stroke: 1px red;
+        -webkit-text-fill-color: white;    border-radius: 50px;
   }
   /* navbar regular css end */
   
