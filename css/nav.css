@@ -23,7 +23,6 @@
   
   /* navbar regular css start */
   .navbar-area {
-    opacity: 0.5;
     background: rgb(34, 34, 34);
     border-bottom: 1px solid #000;
   }
@@ -60,7 +59,7 @@
   }
   .site-navbar ul li a:hover {
     
-        -webkit-text-stroke: 1px black;
+        -webkit-text-stroke: 1px rgb(134, 1, 1);
         -webkit-text-fill-color: white;    border-radius: 50px;
   }
   /* navbar regular css end */
