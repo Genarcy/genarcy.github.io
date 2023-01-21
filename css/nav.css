@@ -61,7 +61,7 @@
   .site-navbar ul li a:hover {
     
         -webkit-text-stroke: 1px rgb(134, 1, 1);
-        -webkit-text-fill-color: white;    border-radius: 50px;
+        -webkit-text-fill-color: white;    
   }
   /* navbar regular css end */
   
