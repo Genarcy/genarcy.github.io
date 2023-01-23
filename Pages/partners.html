@@ -77,6 +77,23 @@ margin-top: -700px;
 
 }
 
+.hover:hover, .hover:focus, .hover:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+.hover {
+ 
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
 </style>
 <!-- margin-bottom: -400px;
   padding-top: 1px;
@@ -98,19 +115,20 @@ margin-top: -700px;
       </div>
     </div>
 
-   
-  <div class="container" >
-    <div class="left">
-    <img src="/images/water.png" alt="water" style="width:100%; padding-top: 100%; padding-bottom: auto; margin-top: 150%;">
-    <div class="text-block">
+  <div class="container">
+    <div class="left hover">
+      <img src="/images/water.png" alt="water" style="width:100%; padding-top: 100%; padding-bottom: auto; margin-top: 150%;">
+    <div class="text-block ">
       <h4 style="text-align: center;">Water Games</h4>
       <p>A cool site made by a very young person Consider going to there server</p>
     </div>
     </div>
-  </div>    
+    </div>
+
    
-  <div class="container" >
-    <div class="left">
+   
+  <div class="container hover" >
+    <div class="left hover">
 
     <img src="/images/potato.png" alt="water" style="width:100%; padding-top: 100%; padding-bottom: auto;margin-top: 150%">
     <div class="text-block">
@@ -122,7 +140,7 @@ margin-top: -700px;
   </div>  
   </div>
   <div class="container" >
-    <div class="left">
+    <div class="left hover">
 
     <img src="/images/link.png" alt="water" style="width:100%; padding-top: 100%; padding-bottom: auto;margin-top: 150%">
     <div class="text-block">
