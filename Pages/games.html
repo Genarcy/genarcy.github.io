@@ -5,7 +5,7 @@
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7811694788510673"
      crossorigin="anonymous"></script>
       <meta charset="UTF-8">
-      <meta name="description" content="This is our Gxmes page! with lots of fun activities!">
+      <meta name="description" content="Its has HTML G@mes and flash G@mes we are still working on how to making our own G@mes! Please Tell your FRIENDS!!!">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -23,14 +23,8 @@
       <title>Games</title>
       <style>
          @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-         * {
-         color: red;
-         }
-         .desc {
-         color: rgb(232, 14, 14);
-         font-size: 16px;
-         padding: 5px;
-         }
+       
+        
          .game:hover{
          color: rgb(120, 9, 9);
          background-color:rgb(52, 3, 3);
@@ -57,6 +51,9 @@
          .flex-container>div {
          margin: 1px;
          padding: 3px;
+         padding-right:60px;
+         margin-right: -40px;
+         margin-bottom: 50px;
          }
          .card {
          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -72,41 +69,15 @@
          .thumb {
          border-radius: 10px;
          }
-         .button {
-         background-color: rgb(109, 5, 5);
-         border: none;
-         color: rgb(226, 225, 225);
-         padding: 15px 25px;
-         text-align: center;
-         text-decoration: none;
-         display: inline-block;
-         font-size: 15px;
-         margin: 4px 2px;
-         cursor: pointer;
-         border-radius: 12px;
-         }
+       
          .center-screen {
          text-align: center;
          font-family: "Arial";
          font-size: 20px;
          }
-         form {
-         background-color: #4654e1;
-         width: 300px;
-         height: 44px;
-         border-radius: 5px;
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         }
-         input {
-         all: unset;
-         font: 16px system-ui;
-         color: #fff;
-         height: 100%;
-         width: 100%;
-         padding: 6px 10px;
-         }
+        
+         
+        
          .rotate{
          -moz-transform: scale(1) rotate(30deg) skewX(30deg) ;
          -webkit-transform: scale(1) rotate(30deg) skewX(30deg) ;
@@ -133,7 +104,28 @@
      border-radius: 12px;
    
          }
+         .card:hover, .card:focus, .card:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+.card {
+ 
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
       </style>
+      <!-- .desc {
+         color: rgb(232, 14, 14);
+         font-size: 16px;
+         padding: 5px;
+         }-->
       <script>
         
       
@@ -194,7 +186,6 @@
                <div class="card-header-row">
                   <img class="thumb" width="300" height="300" src="/images/place.png" alt="#" />
                   <h1 style="color: white;">Coming SOON</h1>
-                  <p class="desc">Join our discord server! https://dsc.gg/genarcy</p>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
                <a class="game" href="#">Press to play</a>
@@ -203,7 +194,6 @@
                <div class="card-header-row">
                   <img class="thumb" width="300" height="300" src="/images/place.png" alt="#" />
                   <h1 style="color: white;">Coming SOON</h1>
-                  <p class="desc">Join our discord server! https://dsc.gg/genarcy</p>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
                <a class="game" href="#">Press to play</a>
@@ -212,7 +202,6 @@
                <div class="card-header-row">
                   <img class="thumb" width="300" height="300" src="" alt="#" />
                   <h1 style="color: white;">Idk</h1>
-                  <p class="desc">Join our discord server! https://dsc.gg/genarcy</p>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
                <a class="game" href="#">Press to play</a>
@@ -221,7 +210,6 @@
                <div class="card-header-row">
                   <img class="thumb" width="300" height="300" src="/Pages/games/dogeminer/favicon.ico" alt="#" />
                   <h1 style="color: white;">Doge Miner</h1>
-                  <p class="desc">Join our discord server! https://dsc.gg/genarcy</p>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
                <a class="game" href="/Pages/games/dogeminer/">Press to play</a>
@@ -230,7 +218,6 @@
                <div class="card-header-row">
                   <img class="thumb" width="300" height="300" src="/Pages/games/dune/dune.jpg" alt="#" />
                   <h1 style="color: white;">DUNE</h1>
-                  <p class="desc">Join our discord server! https://dsc.gg/genarcy</p>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
                <a class="game" href="/Pages/games/dune/">Press to play</a>
@@ -255,12 +242,12 @@
             </div>
             <div class="card">
                <div class="card-header-row">
-                  <img class="thumb" width="300" height="300" src="/images/stickman.png" alt="#" />
-                  <h1 style="color: white;">Stickman Hook</h1>
-                  <p class="desc">ong</p>
+                  <img class="thumb" width="300" height="300" src="/Pages/games/eatio/MoreGames.png" alt="#" />
+                  <h1 style="color: white;">Eat IO</h1>
+                  <p class="desc">Join our discord server! https://dsc.gg/genarcy</p>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
-               <a class="game" href="/Pages/games/Stickman-Hook/index.html">Press to play</a>
+               <a class="game" href="/Pages/games/eatio/">Press to play</a>
             </div>
             <div class="card">
                <div class="card-header-row">
