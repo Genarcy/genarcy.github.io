@@ -23,7 +23,7 @@
   
   /* navbar regular css start */
   .navbar-area {
-    background: rgb(34, 34, 34);
+    background: rgb(0, 0, 0);
     border-bottom: 1px solid #000;
   }
   .site-navbar {
@@ -36,7 +36,7 @@
     font-size: 26px;
     font-weight: 800;
     text-transform: uppercase;
-    color: darkred;
+    color: rgb(100, 1, 1);
     text-decoration: none;
     padding-left: 5%;
     padding-right: 1%;
@@ -51,7 +51,7 @@
     display: flex;
   }
   .site-navbar ul li a {
-    color: white;
+    color: rgb(111, 0, 0);
     padding: 20px;
     display: block;
     font-size: 15px;
@@ -61,7 +61,7 @@
   .site-navbar ul li a:hover {
     
         -webkit-text-stroke: 1px rgb(134, 1, 1);
-        -webkit-text-fill-color: white;    
+        -webkit-text-fill-color: rgb(0, 0, 0);    
   }
   /* navbar regular css end */
   
