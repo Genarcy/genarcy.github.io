@@ -2,7 +2,15 @@
 
 
 
-li, a, button, p {
+li, a, button {
+    font-family: "Overpass", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    background-color: #111;
+    text-decoration: none;
+}
+.para{
     font-family: "Overpass", sans-serif;
     font-weight: 500;
     font-size: 16px;
