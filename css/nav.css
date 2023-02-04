@@ -1,173 +1,72 @@
-/* default css start */
-*{
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600;700&display=swap');
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  body{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-  }
-  .container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 15px;
-    color: red;
-  }
-  
-  /* default css end */
-  
-  
-  /* navbar regular css start */
-  .navbar-area {
-    background: rgb(0, 0, 0);
-    border-bottom: 1px solid #000;
-  }
-  .site-navbar {
+}
+
+li, a, button, p {
+    font-family: "Overpass", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    background-color: #111;
+    text-decoration: none;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-  }
-  a.site-logo {
-    font-size: 26px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: rgb(100, 1, 1);
-    text-decoration: none;
-    padding-left: 5%;
-    padding-right: 1%;
-    position: fixed;
-    margin-right: 2px;
+    padding: 30px 10%;
+    background-color: #111;
+}
 
-  }
-  .site-navbar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-  }
-  .site-navbar ul li a {
-    color: rgb(111, 0, 0);
-    padding: 20px;
-    display: block;
-    font-size: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  .site-navbar ul li a:hover {
-    
-        -webkit-text-stroke: 1px rgb(134, 1, 1);
-        -webkit-text-fill-color: rgb(0, 0, 0);    
-  }
-  /* navbar regular css end */
-  
-  
-  /* nav-toggler css start */
-  .nav-toggler {
-    border: 3px solid red;
-    padding: 5px;
-    opacity: 0.5;
+.logo {
     cursor: pointer;
-    height: 39px;
-    display: none;
-  }
-  .nav-toggler span, 
-  .nav-toggler span:before, 
-  .nav-toggler span:after {
-    width: 28px;
-    height: 3px;
-    background-color: red;
-    display: block;
-    transition: .3s;
-  }
-  .nav-toggler span:before {
-    content: '';
-    transform: translateY(-9px);
-  }
-  .nav-toggler span:after {
-    content: '';
-    transform: translateY(6px);
-  }
-  .nav-toggler.toggler-open span {
-    background-color: transparent;
-  }
-  .nav-toggler.toggler-open span:before {
-    transform: translateY(0px) rotate(45deg);
-  }
-  .nav-toggler.toggler-open span:after {
-    transform: translateY(-3px) rotate(-45deg);
-  }
-  /* nav-toggler css start */
-  
-  
-  /* intro-area css start */
-  .intro-area {
-    height: calc(100vh - 61px);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-  }
-  .intro-area h2 {
-    font-size: 60px;
-    font-weight: 300;
-    line-height: 50px;
-    margin-bottom: 25px;
-  }
-  .intro-area p {
-    font-size: 18px;
-  }
-  /* intro-area css end */
-  
-  
-  /* mobile breakpoint start */
-  @media screen and (max-width: 767px) {
-    .container {
-      max-width: 720px;
-    }
-    /* navbar css for mobile start */
-    .nav-toggler{
-      display: block;
-    }
-    .site-navbar {
-      min-height: 50px;
-    }
-    .site-navbar ul {
-      position: absolute;
-      width: 100%;
-      height: calc(100vh - 60px);
-      left: 0;
-      top: 60px;
-      flex-direction: column;
-      align-items: center;
-      border-top: 1px solid #444;
-      background-color: rgba(0,0,0,.75);
-      max-height: 0;
-      overflow: hidden;
-      transition: .3s;
-    }
-    .site-navbar ul li {
-      width: 100%;
-      text-align: center;
-    }
-    .site-navbar ul li a {
-      padding: 25px;
-    }
-    .site-navbar ul li a:hover {
-      background-color: rgba(255,255,255,.1);
-    }
-    .site-navbar ul.open {
-      max-height: 100vh;
-      overflow: visible;
-    }
-    .intro-area h2 {
-      font-size: 36px;
-      margin-bottom: 15px;
-    }  
-    /* navbar css for mobile end */
-  }
-  /* mobile breakpoint end */
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #8B0000;
+}
+
+
+ul.nav__links {
+    background-color: #111;
+}
+
+.logo {
+    height: 60px;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(139, 0, 0, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(139, 0, 0, 0.8);
+}
+
+p {
+    color: rgba(139, 0, 0, 0.8);
+    font-size: x-large;
+}
