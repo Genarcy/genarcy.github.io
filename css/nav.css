@@ -9,6 +9,8 @@ li, a, button {
     color: #edf0f1;
     background-color: #111;
     text-decoration: none;
+    background-color:rgba(0,0,0,0.1);;
+
 }
 .para{
     font-family: "Overpass", sans-serif;
@@ -28,36 +30,53 @@ header {
     padding-bottom: 10px;
     padding-top: 10px;
     background-color: #111;
+    background-color:rgba(0,0,0,0.8);;
+
 }
 
 .logo {
     cursor: pointer;
+    background-color:rgba(0,0,0,0.8);;
+
 }
 
 .nav__links {
     list-style: none;
+    background-color:rgba(0,0,0,0.8);;
+
 }
 
 .nav__links li {
     display: inline-block;
     padding: 0px 20px;
+    background-color:rgba(0,0,0,0.8);;
+
 }
 
 .nav__links li a {
     transition: all 0.3s ease 0s;
+    background-color:rgba(0,0,0,0.8);;
+
 }
 
 .nav__links li a:hover {
     color: #8B0000;
+    background-color:rgba(0,0,0,0.8);;
+
 }
 
 
 ul.nav__links {
     background-color: #111;
+    background-color:rgba(0,0,0,0.8);;
+
 }
 
 .logo {
     height: 60px;
+    background-color:rgba(0,0,0,0.8);;
+    padding-bottom: 1px;
+
 }
 
 button {
@@ -68,6 +87,8 @@ button {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     margin-left: 20px;
+    background-color:rgba(0,0,0,0.8);;
+
 }
 
 button:hover {
