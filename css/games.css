@@ -1,5 +1,7 @@
 .g{
     text-align: center;
+    margin-top: 70px;
+    margin-left: -50px;
 }
 .game:hover{
     color: rgb(120, 9, 9);
@@ -11,25 +13,28 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    margin-left: 230px;
+    margin-left: 220px;
     margin-bottom: 0px;
-    margin-top: -20px;
+    margin-top: -47px;
+   
 
     }
     .flex-container>div {
     margin: 1px;
     padding: 3px;
     padding-right:60px;
-    margin-right: -40px;
+    margin-right: 40px;
     margin-bottom: 50px;
     }
     .card {
-    max-width: 300px;
+    max-width: 245px;
     border-radius: 10px;
     background-color: black;
     text-align: center;
     font-family: arial;
-    padding-left: 10%;
+    border-style: double;
+    border-color: rgb(153, 4, 4);
+    margin-right: 100px;
     }
     .card-header-row {
     height: 100%;
