@@ -1,0 +1,45 @@
+.g{
+    text-align: center;
+}
+.game:hover{
+    color: rgb(120, 9, 9);
+    background-color:rgb(52, 3, 3);
+    }
+
+    .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-left: 230px;
+    margin-bottom: 0px;
+    margin-top: -20px;
+
+    }
+    .flex-container>div {
+    margin: 1px;
+    padding: 3px;
+    padding-right:60px;
+    margin-right: -40px;
+    margin-bottom: 50px;
+    }
+    .card {
+    max-width: 300px;
+    border-radius: 10px;
+    background-color: black;
+    text-align: center;
+    font-family: arial;
+    padding-left: 10%;
+    }
+    .card-header-row {
+    height: 100%;
+    }
+    .thumb {
+    border-radius: 10px;
+    }
+  
+    .center-screen {
+    text-align: center;
+    font-family: "Arial";
+    font-size: 20px;
+    }

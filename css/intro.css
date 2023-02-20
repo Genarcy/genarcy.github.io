@@ -53,12 +53,11 @@
   display: flex;
 }
 
-
-
 html, body{
   margin: 0px;
-  overflow: hidden;
 }
+
+
 
 @keyframes splash {
   0%   {left:50%; top:50%;}
