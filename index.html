@@ -119,7 +119,28 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+.static {
+  position:absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity:0;
+}
+#gifs-rows img {
+  cursor: pointer;
+}
+#gifs-rows .gif-file {
+  display:none;
+}
 </style>
+<script> 
+$("img", "#gifs-rows").click(function() {
+  $('.preset-file').toggle();
+  $('.gif-file').toggle();
+});
+    
+    </script>
 <body>
     <!--<div class="container">
         <a href="javascript:playSound('Genarcy');">
@@ -132,20 +153,26 @@
 
     <div id="particles-js"></div>
     <header>
-        <a><img class="logo" src="images/logo.png" alt="logo"></a>
-        <p>"put the text here"</p>
+        <div id="gifs-rows">
+            <img class="logo" src="/images/logo.png" alt="gif preset" class="preset-file">
+            <img src="images/3dgifmaker01392.gif" alt="gif preset" class="gif-file">
+          </div>
+        <p>"Genarcy a fun "math" place"</p>
         <nav>
             <ul class="nav__links">
-                <li><a href="#">Home</a></li>
                 <li><a href="/Pages/games.html">Games</a></li>
                 <li><a href="/Pages/bookmarks.html">Hacks</a></li>
                 <li><a href="/Pages/partners.html">Partners</a></li>
                 <li><a href="/Pages/chat.html">Chat</a></li>
+                <li><a href="/Pages/music.html">Music</a></li>
+
                 <a class="cta" id="buttonclick" onclick="openinblank()"><button>about:blank</button></a>
             </ul>
         </nav>
 
     </header>
+    <h1 style="text-align: center; color: gold;">BIG ANNOUNCEMENT</h1>
+    <p style="padding-bottom: 100px; text-align: center;">Netlify Links are going down :( please join our <a href="dsc.gg/genarcy">discord</a> for more info</p>
         <script src="js/main.js"></script>
         <h1 style="text-align: center; margin-top: -60px;">Top Games To Play</h1>
         <div class="g">
@@ -156,7 +183,6 @@
                <h1 style="color: white;">Riddleschool2</h1>
                <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
             </div>
-            <a class="game" href="/Pages/games/riddleschool2/">Press to play</a>
          </div>
          <div class="card">
             <div class="card-header-row"  onclick="location.href='/Pages/games/riddleschool/';" style="cursor: pointer;">
@@ -166,15 +192,13 @@
 
                <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
             </div>
-            <a class="game" href="/Pages/games/riddleschool/">Press to play</a>
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/dogeminer/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/Pages/games/dogeminer/favicon.ico" alt="#" />
                <h1 style="color: white;">Doge Miner</h1>
                <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
             </div>
-            <a class="game" href="/Pages/games/dogeminer/">Press to play</a>
          </div>
         </div>
         </div>
@@ -189,7 +213,7 @@
             }
             
          
-
+           
            </script>
         <script src="js/clock.js"></script>
         <script src="js/jquery.min.js"></script>
