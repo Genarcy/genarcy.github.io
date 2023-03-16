@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+      <script src="/unbed-stable/unbed.js"></script> 
+
       <script async src="https://arc.io/widget.min.js#UvHfwCmt"></script>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7811694788510673"
      crossorigin="anonymous"></script>
@@ -9,6 +11,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XWJJ5LHNR2"></script>
 <script>
@@ -20,42 +23,76 @@
 </script> 
 
 <link rel="stylesheet" type="text/css" href="/css/index.css">
-    <link rel="stylesheet" href="/css/nav.css" />
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/app.css">
+
+<link rel="stylesheet" href="css/switch.css">
+<link rel="stylesheet" href="css/button.css">
       <title>Games</title>
       <style>
          @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
        
-        
-         .game:hover{
-         color: rgb(120, 9, 9);
-         background-color:rgb(52, 3, 3);
-         }
-     
+        body{
+         background: linear-gradient(180deg, black 20%, rgb(78, 1, 1) 100%); 
+
+        }
+       
+         a{
+      font-size: 0.001px;
+     }
+     .size{
+      font-size: medium;
+     }
          .flex-container {
          display: flex;
          flex-wrap: wrap;
          align-items: center;
          align-content: center;
+         padding-bottom: 0px;
+
          }
          .flex-container>div {
          margin: 1px;
-         padding: 3px;
-         padding-right:60px;
-         margin-right: -40px;
-         margin-bottom: 50px;
+         padding-top: 5px;
+         padding-bottom: 0px;
+         padding-left: 5px;
+         padding-right:5px;
+         margin-right: 15px;
+         margin-bottom: 70px;
+         margin-left: 10px;
+
          }
          .card {
-         max-width: 300px;
+         width: 150px;
          border-radius: 10px;
-         background-color: black;
+         border-style:ridge;
+         border-color: rgb(128, 0, 0);
+         
+         
+         background-color: rgb(53, 49, 49);
          text-align: center;
          font-family: arial;
+         padding-right: 0%;
+         padding-bottom: 0px;
+         background: linear-gradient(180deg, black 50%, rgb(128, 0, 0) 100%); 
+
          }
          .card-header-row {
-         height: 100%;
+         height: 100px;
+         padding-right: 0%;
+         margin-bottom: 60px;
+
+
          }
          .thumb {
          border-radius: 10px;
+         width: 150px;
+   height: 150px;
+         }
+         h1{
+            font-size: 13px;
+            padding-bottom: 0%;
          }
        
          .center-screen {
@@ -83,13 +120,17 @@
          transform: scale(1.1) rotate(30deg) skewX(-20deg) ;}
       
          #mySearch{
-            background-color: rgb(43, 1, 1);
-            color: red;
+            background-color: rgb(128, 0, 0);
+            color: white;
             width: 200px;
           height: 20px;
      margin-left: 15%;
      padding:15px;
      border-radius: 12px;
+           border-style:ridge ;
+           border-color: white;
+           text-align: center;
+           margin-left: -10px;
    
          }
          .card:hover, .card:focus, .card:active {
@@ -109,8 +150,11 @@
   transition-timing-function: ease-out;
 }
 
-      body, html {
-        margin: 0;
+
+body,
+      .box{
+         background-color: #0e0e0e;
+         border-radius: 10px;
       }
 
       </style>
@@ -141,45 +185,57 @@
        </script>
    </head>
    <body>
+
       <div id="particles-js"></div>
       <header>
-         <a><img class="logo" src="/images/logo.png" alt="logo"></a>
-         <p class="para">"These are the games. Over 100+ i think..."</p>
+         <a href="index.html" ><img class="logo" src="/images/logo.png" alt="gif preset" class="preset-file"></a>
+         <p class="text">"Genarcy a fun "math" place"</p>
          <nav>
-             <ul class="nav__links">
-                 <li><a href="/index.html">Home</a></li>
-                 <li><a href="/Pages/bookmarks.html">Hacks</a></li>
-                 <li><a href="/Pages/partners.html">Partners</a></li>
-                 <li><a href="/Pages/chat.html">Chat</a></li>
-                 <li><a href="/Pages/music.html">Music</a></li>
-
-                 <a class="cta" id="buttonclick" onclick="openinblank()"><button>about:blank</button></a>
-             </ul>
+           <ul class="nav__links">
+               <li><a class="size" href="/index.html">Home</a></li>
+               <!--<li><a class="size" href="/Pages/bookmarks.html">Hacks</a></li>
+               <li><a class="size" href="/Pages/partners.html">Partners</a></li>
+               <li><a class="size" href="/Pages/chat.html">Chat</a></li>-->
+               <li><a class="size" href="/Pages/music.html">Music</a></li>
+     
+               <a class="cta" id="buttonclick" onclick="openinblank()"><button>about:blank</button></a>
+           </ul>
          </nav>
- 
-     </header>
+       </header>
       <div class="center-screen">
-      <p href="https://3kh0.github.io" class="rotate" style="margin-top: 20px;">https://watergames.watersocials.com/</p>
-      <p class="rot" style="text-align: center;">gointerstellar.app</p>
-      <div style="margin-left: 20px; color: rgb(143, 5, 5); margin-top: 40px; padding-top: 10px;" id='randomtext'></div>
+      
+      <div style="margin-left: 20px; color: rgb(128, 0, 0); margin-top: 40px; padding-top: 10px; margin-bottom: 50px; font-size: 30px" id='randomtext'></div>
 
-      <h1 style="font-family: 'Silkscreen', cursive; text-align:center;">Games</h1>
       <script src="/js/search.js"></script>
       <script src="/js/games.js"></script>
 <script>
-    var sentences = new Array("Please give us game request!", "Do you want fact on here?", "Games for fun?", "noah is dumb", "yes", "Shoutout to ryan", "Request for games plz", "who am i?", "No u", "Pwease tell your friends", "https://discord.gg/UJ5NszstAv", "0rca#7089", "your mom", "did you know Avocados are a fruit, not a vegetable?", "did you know 0rca is human!?", "HUH?", "smileman52 wus here", "UwU", "If a cabby drives a cab, then who drives a bus?", "What has a neck but no head?", "Volley ball sucks hehe", "duke", "Meme.rip was here ;)");
+    var sentences = new Array("Please give us game request!", "Do you want fact on here?", "Games for fun?", "noah is dumb", "yes", "Shoutout to ryan", "Request for games plz", "who am i?", "No u", "Pwease tell your friends", "https://discord.gg/UJ5NszstAv", "0rca#7089", "your mom", "did you know Avocados are a fruit, not a vegetable?", "did you know 0rca is human!?", "HUH?", "smileman52 wus here", "UwU", "If a cabby drives a cab, then who drives a bus?", "What has a neck but no head?", "Volley ball sucks hehe", "0rca got rizz", "i think purple is better", "Meme.rip was here ;)");
             console.log(Math.round(Math.random() * 7));
             document.getElementById("test")
             document.getElementById('randomtext').innerHTML = sentences[Math.round(Math.random() * sentences.length)];
         </script>
+        <center>
+         <a onclick="randomlink()" style="background-color: rgb(138, 7, 7);" class="button">Random Game Button</a><br><br>
 
     <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." >
-         <a onclick="randomlink()" class="button">Random Game Button</a>
+    </center>
+
          <p style="text-align: center;">Scroll down for apps</p>
          <div id="games" class="flex-container">
             <div class="card">
                <div class="card-header-row" onclick="location.href='#';" style="cursor: pointer;">
-                  <img class="thumb" width="300" height="300" src="/images/place.png" alt="#" />
+                  <img class="thumb" width="150" height="150" src="/images/place.png" alt="#" />
+                  <div class="box">
+                  <h1 style="color: white;">placeholder</h1>
+                  </div>
+                  <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
+               </div>
+               <a class="game" href="#">Press to play</a>
+
+            </div>
+            <div class="card">
+               <div class="card-header-row" onclick="location.href='#';" style="cursor: pointer;">
+                  <img class="thumb" width="150" height="150" src="/images/place.png" alt="#" />
                   <h1 style="color: white;">placeholder</h1>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
@@ -187,31 +243,26 @@
             </div>
             <div class="card">
                <div class="card-header-row" onclick="location.href='#';" style="cursor: pointer;">
-                  <img class="thumb" width="300" height="300" src="/images/place.png" alt="#" />
-                  <h1 style="color: white;">placeholder</h1>
-                  <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
-               </div>
-               <a class="game" href="#">Press to play</a>
-            </div>
-            <div class="card">
-               <div class="card-header-row" onclick="location.href='#';" style="cursor: pointer;">
-                  <img class="thumb" width="300" height="300" src="/images/place.png" alt="#" />
+                  <img class="thumb" width="150" height="150" src="/images/place.png" alt="#" />
                   <h1 style="color: white;">Placeholder</h1>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
                <a class="game" href="#">Press to play</a>
             </div>
             <div class="card">
-               <div class="card-header-row" onclick="location.href='/Pages/games/riddletransfer/';" style="cursor: pointer;">
-                  <img class="thumb" width="300" height="300" src="/images/tran.jpeg" alt="#" />
+               <div class="card-header-row game" onclick="location.href='/Pages/games/riddletransfer/';" style="cursor: pointer;">
+                  <img class="thumb" width="150" height="150" src="/Pages/games/riddletransfer/riddletransfer.png" alt="#" />
                   <h1 style="color: white;">riddletransfer</h1>
+
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
+
                </div>
-               <a class="game" href="/Pages/games/riddletransfer/">Press to play</a>
-            </div>
+               <a class="game" href="#">Press to play</a>
+
+          </div>
             <div class="card">
                <div class="card-header-row" onclick="location.href='/Pages/games/riddleschool5/';" style="cursor: pointer;">
-                  <img class="thumb" width="300" height="300" src="/images/5.jpeg" alt="#" />
+                  <img class="thumb" width="150" height="150" src="/images/5.jpeg" alt="#" />
                   <h1 style="color: white;">riddleschool5</h1>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
@@ -219,7 +270,7 @@
             </div>
             <div class="card">
                <div class="card-header-row" onclick="location.href='/Pages/games/riddleschool4/';" style="cursor: pointer;">
-                  <img class="thumb" width="300" height="300" src="/images/4.jpeg" alt="#" />
+                  <img class="thumb" width="150" height="150" src="/images/4.jpeg" alt="#" />
                   <h1 style="color: white;">riddleschool4</h1>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
@@ -227,7 +278,7 @@
             </div>
             <div class="card">
                <div class="card-header-row" onclick="location.href='/Pages/games/riddleschool3/';" style="cursor: pointer;">
-                  <img class="thumb" width="300" height="300" src="/images/3.jpeg" alt="#" />
+                  <img class="thumb" width="150" height="150" src="/images/3.jpeg" alt="#" />
                   <h1 style="color: white;">riddleschool3</h1>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
@@ -235,7 +286,7 @@
             </div>
             <div class="card">
                <div class="card-header-row" onclick="location.href='/Pages/games/big-tower-tiny-square';" style="cursor: pointer;">
-                  <img class="thumb" width="300" height="300" src="/Pages/games/big-tower-tiny-square/icon-256.png" alt="#" />
+                  <img class="thumb" width="150" height="150" src="/Pages/games/big-tower-tiny-square/icon-256.png" alt="#" />
                   <h1 style="color: white;">big tower</h1>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
@@ -259,7 +310,7 @@
             </div>
             <div class="card">
                <div class="card-header-row" onclick="location.href='/Pages/games/bloonstd4/';" style="cursor: pointer;">
-                  <img class="thumb" width="300" height="300" src="/Pages/games/bloonstd4/lib/bloontowerdefense4/1251.jpg" alt="#" />
+                  <img class="thumb" width="300" height="300" src="/images/bloons.jpeg" alt="#" />
                   <h1 style="color: white;">BLOONS 4</h1>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
@@ -558,7 +609,7 @@
             </div>
             <div class="card" onclick="location.href='#';" style="cursor: pointer;">
                <div class="card-header-row">
-                  <img class="thumb" width="300" height="300" src="/images/ve3.jpeg" alt="#" />
+                  <img class="thumb" width="300" height="300" src="/images/vex3.jpeg" alt="#" />
                   <h1 style="color: white;">vex 3 (coming soon)</h1>
                   <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
                </div>
@@ -818,7 +869,7 @@
                </div>
                <a class="game" href="/Pages/games/interactivebuddy/">Press to play</a>
             </div>
-            <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+            <div class="card" onclick="location.href='/Pages/games/mario/';" style="cursor: pointer;">
                <div class="card-header-row">
                   <img class="thumb" width="300" height="300" src="/Pages/games/mario/Theme/Mario.gif" alt="#" />
                   <h1 style="color: white;">Mario</h1>
@@ -826,7 +877,7 @@
                </div>
                <a class="game" href="/Pages/games/mario/">Press to play</a>
             </div>
-            <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+            <div class="card" onclick="location.href='/Pages/games/madalin-stunt-cars-2/';" style="cursor: pointer;">
                <div class="card-header-row">
                   <img class="thumb" width="300" height="300" src="/Pages/games/madalin-stunt-cars-2/img/logo.jpg" alt="#" />
                   <h1 style="color: white;">Madalin Stunt Cars</h1>
@@ -834,7 +885,7 @@
                </div>
                <a class="game" href="/Pages/games/madalin-stunt-cars-2/">Press to play</a>
             </div>
-            <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+            <div class="card" onclick="location.href='/Pages/games/learntofly/';" style="cursor: pointer;">
                <div class="card-header-row">
                   <img class="thumb" width="300" height="300" src="/Pages/games/learntofly/learntofly.png" alt="#" />
                   <h1 style="color: white;">Learn To Fly</h1>
@@ -842,7 +893,7 @@
                </div>
                <a class="game" href="/Pages/games/learntofly/">Press to play</a>
             </div>
-            <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+            <div class="card" onclick="location.href='/Pages/games/kittencannon/';" style="cursor: pointer;">
                <div class="card-header-row">
                   <img class="thumb" width="300" height="300" src="/Pages/games/kittencannon/kittencannon.png" alt="#" />
                   <h1 style="color: white;">Kitten Cannon</h1>
@@ -850,7 +901,7 @@
                </div>
                <a class="game" href="/Pages/games/kittencannon/">Press to play</a>
             </div>
-            <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+            <div class="card" onclick="location.href='/Pages/games/game-inside/';" style="cursor: pointer;">
                <div class="card-header-row">
                   <img class="thumb" width="300" height="300" src="/Pages/games/game-inside/img/display.png" alt="#" />
                   <h1 style="color: white;">Game Inside a Game</h1>
@@ -858,7 +909,7 @@
                </div>
                <a class="game" href="/Pages/games/game-inside/">Press to play</a>
             </div>
-            <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+            <div class="card" onclick="location.href='/Pages/games/geodash/';" style="cursor: pointer;">
                <div class="card-header-row">
                   <img class="thumb" width="300" height="300" src="/Pages/games/geodash/geoscratchicon.png" alt="#" />
                   <h1 style="color: white;">Geometry Dash</h1>
@@ -866,7 +917,7 @@
                </div>
                <a class="game" href="/Pages/games/geodash/">Press to play</a>
             </div>
-            <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+            <div class="card" onclick="location.href='/Pages/games/hba/';" style="cursor: pointer;">
                <div class="card-header-row">
                   <img class="thumb" width="300" height="300" src="/Pages/games/hba/hoverbotarena.jpg" alt="#" />
                   <h1 style="color: white;">HBA</h1>
@@ -874,7 +925,7 @@
                </div>
                <a class="game" href="/Pages/games/hba/">Press to play</a>
             </div>
-            <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+            <div class="card" onclick="location.href='/Pages/games/solitaire/';" style="cursor: pointer;">
                <div class="card-header-row">
                   <img class="thumb" width="300" height="300" src="/images/sol.jpeg" alt="#" />
                   <h1 style="color: white;">Solitaire</h1>
@@ -882,7 +933,7 @@
                </div>
                <a class="game" href="/Pages/games/solitaire/">Press to play</a>
             </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/wpnfire/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/Pages/games/wpnfire/wpnfire.jpg" alt="#" />
                <h1 style="color: white;">WPN</h1>
@@ -890,7 +941,7 @@
             </div>
             <a class="game" href="/Pages/games/wpnfire/">Press to play</a>
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/rooftop-snipers/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/Pages/games/rooftop-snipers/img/thumb.png" alt="#" />
                <h1 style="color: white;">Rooftop Snipers</h1>
@@ -898,7 +949,7 @@
             </div>
             <a class="game" href="/Pages/games/rooftop-snipers/">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/1/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/1.png" alt="1" />
                <h1 style="color: white;">1</h1>
@@ -906,7 +957,7 @@
             </div>
             <a class="game" href="/Pages/games/1/">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/basketball-stars/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/Basketball.jpeg" alt="basketball" />
                <h1 style="color: white;">Basketball stars</h1>
@@ -914,7 +965,7 @@
             </div>
             <a class="game" href="/Pages/games/basketball-stars/">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/ngon/index.html';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/Ngon.png" alt="Ngon" />
                <h1 style="color: white;">N-gon</h1>
@@ -922,7 +973,7 @@
             </div>
             <a class="game" href="/Pages/games/ngon/index.html">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/tetris/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/tetris.jpeg" alt="Tetris" />
                <h1 style="color: white;">Tetris</h1>
@@ -930,7 +981,7 @@
             </div>
             <a class="game" href="/Pages/games/tetris/">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/chromedino/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/dino.png" alt="dino" />
                <h1 style="color: white;">DINO</h1>
@@ -938,7 +989,7 @@
             </div>
             <a class="game" href="/Pages/games/chromedino/">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/connect3/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/connect3.png" alt="connect3" />
                <h1 style="color: white;">connect3</h1>
@@ -946,7 +997,7 @@
             </div>
             <a class="game" href="/Pages/games/connect3/">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/escapingtheprison/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/prison.png" alt="prison" />
                <h1 style="color: white;">Escaping the Prison</h1>
@@ -954,7 +1005,7 @@
             </div>
             <a class="game" href="/Pages/games/escapingtheprison/">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/xx142-b2exe/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/IDK.png" alt="xx142-bzexe" />
                <h1 style="color: white;">xx142-bzexe</h1>
@@ -962,7 +1013,7 @@
             </div>
             <a class="game" href="/Pages/games/xx142-b2exe/">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/pacman/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/pacman.jpeg" alt="Pacman" />
                <h1 style="color: white;">Pacman</h1>
@@ -970,7 +1021,7 @@
             </div>
             <a class="game" href="/Pages/games/pacman/">Press to play</a> 
          </div>
-         <div class="card">
+         <div class="card" onclick="location.href='/Pages/games/Subway-Surfers/';">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/subway.jpeg" alt="Subway" />
                <h1 style="color: white;">Subway surfers</h1>
@@ -978,7 +1029,7 @@
             </div>
             <a class="game" href="/Pages/games/Subway-Surfers/">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/2048/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/2048.png" alt="2048" />
                <h1 style="color: white;">2048</h1>
@@ -986,7 +1037,7 @@
             </div>
             <a class="game" href="/Pages/games/2048/">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/asciispace/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/Asciispace.png" alt="Asciispace" />
                <h1 style="color: white;">Asciispace</h1>
@@ -994,7 +1045,7 @@
             </div>
             <a class="game" href="/Pages/games/asciispace/">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/asteroids/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/Asteroids.png" alt="Asteroids" />
                <h1 style="color: white;">asteroids</h1>
@@ -1002,7 +1053,7 @@
             </div>
             <a class="game" href="/Pages/games/asteroids/">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='#';" style="cursor: pointer;">
+         <div class="card" onclick="location.href='/Pages/games/evilglitch/';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/Evil.jpeg" alt="evilGlitch" />
                <h1 style="color: white;">Evilglitch</h1>
@@ -1298,14 +1349,7 @@
             </div>
             <a class="game" href="/Pages/games/ageofwar">Press to play</a> 
          </div>
-         <div class="card" onclick="location.href='https://scratch.mit.edu/projects/292728003/fullscreen/';" style="cursor: pointer;">
-            <div class="card-header-row">
-               <img class="thumb" width="300" height="300" src="/images/2.png" alt="" />
-               <h1 style="color: white;">2 player battle</h1>
-               <div style="margin: 24px 0;"> <i class="fa-solid fa-keyboard"></i> </div>
-            </div>
-            <a class="game" href="https://scratch.mit.edu/projects/292728003/fullscreen/">Press to play</a> 
-         </div>
+         
          <div class="card" onclick="location.href='/Pages/games/you-are-bezos';" style="cursor: pointer;">
             <div class="card-header-row">
                <img class="thumb" width="300" height="300" src="/images/bezo.jpeg" alt="/images/bezo.jpeg" />
@@ -1315,6 +1359,7 @@
             <a class="game" href="/Pages/games/you-are-bezos">Press to play</a> 
          </div>
       </div>
+    
       <!-- begin wwww.htmlcommentbox.com 
          <div id="HCB_comment_box"> <a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments... </div>
          <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
@@ -1331,6 +1376,7 @@
             })(); 
          </script>
           end www.htmlcommentbox.com -->
+       
       <script src="/js/jquery.min.js"></script>
       <script src="/js/particles.js"></script>
       <script src="/js/app.js"></script>

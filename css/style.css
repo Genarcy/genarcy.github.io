@@ -1,12 +1,24 @@
-html, body {
-  overflow: scroll;
-
+body,
+html
+{
+  margin: 0px;
 }
 
+.footer {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
 
-.dot {
-    height: 8px; width: 8px;
-    border-radius: 4px; /* rounds corners */
-    position: absolute;
-    background: red;
+  align-items: center;
+  padding: 30px 10%;
+  
+  background-color: #111;
+  bottom: 0;
+margin-bottom: -100px;
+  position: relative;
 }
+
+.copy {
+  color: white;
+}
+
