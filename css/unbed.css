@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+    h1, h2, h3, p {
+text-align: center;
+font-family: 'Rubik', sans-serif;
+}
+
+    body {
+background-image: linear-gradient(rgba(179, 1, 1, 0.5), rgba(0, 0, 0, 0.5) 50%), url("//assets.unbed.gq/blocked/assets/bg.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+margin-right: auto;
+margin-left: auto;
+margin-top: 12.5%;
+display: grid;
+place-items: center;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+    .button {
+background-color: #900404;
+border: none;
+color: rgb(201, 191, 191);
+padding: 15px 70px;
+font-family: 'Rubik', sans-serif;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 2px 4px;
+cursor: pointer;
+}
+
+    .button5 {
+background-color: rgb(19, 18, 18);
+color: rgb(175, 165, 165);
+border: 5px solid #555555;
+}
+
+    .button5:hover {
+background-color: #000000;
+color: rgb(66, 64, 64);
+}
+
+    .brlarge {
+display: block;
+margin-bottom: 2em;
+}
