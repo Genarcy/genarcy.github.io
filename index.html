@@ -45,6 +45,17 @@
    
     background: linear-gradient(180deg, black 0%, rgb(128, 0, 0) 100%); 
     }
+    img{
+
+    }
+    @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
     body {
       background-repeat: no-repeat;
@@ -64,6 +75,7 @@
     .boxx:hover{
 border-color: white;   
 border-style: double; }
+
 
 
     .multicolor-text {
@@ -89,6 +101,7 @@ margin-top: -100px;    }
     .img{
       position:absolute;
       border-radius: 20px;
+      animation: rotation 6s infinite linear;
 
     width: 50px; 
     padding-right: 0%;
@@ -96,7 +109,8 @@ margin-top: -100px;    }
     padding-bottom: 0%;
     padding-top: 0%;
     margin-top: -190px;
-margin-left: 480px;    }
+margin-left: 480px; 
+   }
 
 
 
