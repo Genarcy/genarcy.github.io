@@ -44,9 +44,7 @@
    
     background: linear-gradient(180deg, black 0%, rgb(128, 0, 0) 100%); 
     }
-    img{
-
-    }
+   
     @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -276,6 +274,14 @@ margin-right: -300px;
   let stars = [];
   window.requestAnimationFrame(animate);
 </script>
+<script type="text/javascript">
+  if (window.top.location.href == "about:blank") {
+      document.getElementById("buttonclick").remove();
+  }
+  
+
+ 
+ </script>
 
 
 </html>
