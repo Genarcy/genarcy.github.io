@@ -287,14 +287,65 @@ s{
        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKuDjoPEXwQY4-GHZiqPfucUB3VasuSIycoJtPKs3gA7UTpQ/viewform?embedded=true" width="640" height="438" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRkCjtbOe2t-OwJmEnZs93se2JvBGFfDNEjH7orcHtNDtnDQR3G6Ph1_T6fpY5CAuMKIeBukYwslOSR/pubhtml?widget=true&amp;headers=false" width="640" height="400"></iframe>
 
-       <script type="text/javascript">
-        if (window.top.location.href == "about:blank") {
-            document.getElementById("buttonclick").remove();
+       <script>
+        const audio = document.querySelector('audio');
+        const playButton = document.querySelector('.play-button');
+        const volumeButton = document.querySelector('.volume-button');
+        const timeDisplay = document.querySelector('#time-display');
+        const sliderBar = document.querySelector('.slider-bar');
+        const sliderThumb = document.querySelector('.slider-thumb');
+      
+        // Initialize the slider
+        sliderThumb.addEventListener('mousedown', () => {
+          document.addEventListener('mousemove', moveThumb);
+          document.addEventListener('mouseup', releaseThumb);
+        });
+      
+        // Handle the slider events
+        function moveThumb(event) {
+          const sliderRect = sliderBar.getBoundingClientRect();
+          const position = (event.clientX - sliderRect.left) / sliderRect.width;
+          audio.currentTime = audio.duration * position;
+          updateTimeDisplay();
         }
+      
+        function releaseThumb() {
+          document.removeEventListener('mousemove', moveThumb);
+          document.removeEventListener('mouseup', releaseThumb);
+        }
+      
+        function updateTimeDisplay() {
+          const minutes = Math.floor(audio.currentTime / 60);
+          const seconds = Math.floor(audio.currentTime % 60).toString().padStart(2, '0');
+          timeDisplay.textContent = `${minutes}:${seconds}`;
+        }
+      
+        audio.addEventListener('timeupdate', () => {
+          const position = audio.currentTime / audio.duration;
+          sliderThumb.style.left = `${position * 100}%`;
+          updateTimeDisplay();
+        });
+      
+        playButton.addEventListener('click', () => {
+          if (audio.paused) {
+            audio.play();
+            playButton.textContent = 'Pause';
+          } else {
+            audio.pause();
+            playButton.textContent = 'Play';
+          }
+        });
+      
+        volumeButton.addEventListener('click', () => {
+          audio.muted = !audio.muted;
+          if (audio.muted) {
+            volumeButton.textContent = 'Unmute';
+          } else {
+            volumeButton.textContent = 'Mute';
+          }
+        });
         
-     
-       
-       </script>
+      </script>
     
 
       <script src="code.js"></script>
