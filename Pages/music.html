@@ -28,6 +28,135 @@
         <title>Music</title>
     </head>
     <style>
+            
+.music-card {
+  position: relative; /* Ensure the music card is positioned relative to its parent container */
+  width: 225px;
+  height: 400px;
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  color:white;
+  text-align: center;
+  border-top:white;
+}
+      img{
+        width: 90%;
+        margin-top:10px;
+      }
+
+.audio-player {
+  position: absolute; /* Position the audio player relative to the music card container */
+  bottom: 0; /* Align the audio player to the bottom of the music card container */
+  width: 100%;
+  background-color: #fff;
+  margin-left: -10px;
+  background-color: black;
+  
+}
+      audio::-webkit-media-controls-enclosure {
+    border-radius: 1px;
+}
+
+.audio-player audio {
+  width: 100%;
+  
+}
+
+/* Example CSS styles for audio controls */
+.audio-player button {
+  font-size: 1rem;
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.audio-player button:hover {
+  background-color: #fff;
+  color: #000;
+}
+audio::-webkit-media-controls-mute-button 
+      { display: none !important; }
+      
+      audio::-webkit-media-controls-volume-slider 
+      { display: none !important; }
+      
+      audio::-webkit-media-controls-play-button
+      {display: none !important;}
+
+      audio::-webkit-media-controls-option-button
+      {display: none !important;}
+      
+  
+
+
+
+    
+
+.card:hover, .card:focus, .card:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+.card {
+ 
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+
+}
+      /* hide the default slider bar */
+#audio-player::-webkit-media-slider {
+  display: none;
+}
+
+/* style the custom slider */
+.custom-slider {
+  position: relative;
+  height: 4px;
+  width: 100%;
+  background-color: #ddd;
+  margin-top: 8px;
+}
+
+.slider-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: black;
+}
+
+.slider-thumb {
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+  margin-left: -10px;
+}
+      
+.lyrics-container {
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  width: 100%;
+  max-height: 60px; /* Set the maximum height of the lyrics container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
            audio::-webkit-media-controls-panel {
           background: linear-gradient(0deg, rgb(124, 0, 0) 0%, black 100%); 
 }
