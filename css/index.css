@@ -128,100 +128,11 @@ font-size: 17px;
 }
 }
 
-h1 {
-color: red;
-font-family: Arial;
-}
 
-p {
-color: rgb(48, 10, 160);
-font-family: Arial;
-}
 
-h3 { 
-color: rgb(53, 7, 134);
-font-family: Arial;
-}
 
-h2 { 
-color: rgb(51, 5, 126);
-font-family: Arial;
-}
 
-/* latin */
-@font-face {
-font-family: 'Orbitron';
-font-style: normal;
-font-weight: 400;
-src: url(https://fonts.gstatic.com/s/orbitron/v24/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWgz.woff2) format('woff2');
-unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 
-#clock {
-font-family: 'Orbitron', sans-serif;
-color: #D2042D;
-font-size: 56px;
-text-align: left;
-padding-top: 40px;
-padding-bottom: 40px;
-padding-left: 40px;
-}
-
-.nav {
-text-align: center;
-font-family: Arial;
-}
-
-.nav * {
-box-sizing: border-box;
-transition: all .35s ease;
-}
-
-.nav a {
-padding: .5em .8em;
-position: relative;
-text-decoration: none;
-font-size: 20px;
-}
-
-.nav a::before,
-.nav a::after {
-content: '';
-height: 14px;
-width: 14px;
-position: absolute;
-transition: all .35s ease;
-opacity: 0;
-}
-
-.nav a::before {
-content: '';
-right: 0;
-top: 0;
-border-top: 3px solid #3E8914;
-border-right: 3px solid #2E640F;
-transform: translate(-100%, 50%);
-}
-
-.nav a:after {
-content: '';
-left: 0;
-bottom: 0;
-border-bottom: 3px solid #2E640F;
-border-left: 3px solid #3E8914;
-transform: translate(100%, -50%)
-}
-
-.nav a:hover:before,
-.nav a:hover:after {
-transform: translate(0, 0);
-opacity: 1;
-
-}
-
-.nav a:hover {
-color: #3DA35D;
-}
 
 .link {
 font-family: Arial;
@@ -232,13 +143,7 @@ body {
 	background-color: black;
 }
 
-.font-arial {
-font-family: Arial;
-}
 
-.white {
-color: white;
-}
 
 #particles-js canvas
 {
