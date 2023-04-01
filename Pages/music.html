@@ -27,128 +27,71 @@
       <title>Music</title>
    </head>
    <style>
-      .music-card {
-      position: relative; /* Ensure the music card is positioned relative to its parent container */
-      width: 225px;
-      height: 400px;
-      background-color: black;
-      border-radius: 10px;
-      overflow: hidden;
-      color:white;
-      text-align: center;
-      border-top:white;
+      .card {
+        display: inline-block;
+        width: 250px;
+        height: 360px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        background-color: black;
       }
-      img{
-      width: 90%;
-      margin-top:10px;
+  *{
+    color:white;
+  }    .card img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
       }
-      .audio-player {
-      position: absolute; /* Position the audio player relative to the music card container */
-      bottom: 0; /* Align the audio player to the bottom of the music card container */
-      width: 100%;
-      background-color: #fff;
-      margin-left: -10px;
-      background-color: black;
+  
+      .card audio {
+        width: 80%;
+        margin: 15px 0;
       }
-      audio::-webkit-media-controls-enclosure {
-      border-radius: 1px;
+  
+      .card h2 {
+        margin: 10px;
+        
       }
-      .audio-player audio {
-      width: 100%;
+  
+      .card p {
+        margin: 5px;
       }
-      /* Example CSS styles for audio controls */
-      .audio-player button {
-      font-size: 1rem;
-      padding: 5px 10px;
-      background-color: #000;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      margin: 5px;
+  
+      .card .btn {
+        background-color: darkslategray;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: -10px;
+        
       }
-      .audio-player button:hover {
-      background-color: #fff;
-      color: #000;
+  
+      .card .btn:hover {
+        background-color: dimgray;
       }
-      audio::-webkit-media-controls-mute-button 
-      { display: none !important; }
-      audio::-webkit-media-controls-volume-slider 
-      { display: none !important; }
-      audio::-webkit-media-controls-play-button
-      {display: none !important;}
-      audio::-webkit-media-controls-option-button
-      {display: none !important;}
-      /* hide the default slider bar */
-      #audio-player::-webkit-media-slider {
-      display: none;
+  
+      .card .play-btn:before {
+        content: "\f04b";
+        font-family: "FontAwesome";
       }
-      /* style the custom slider */
-      .custom-slider {
-      position: relative;
-      height: 4px;
-      width: 100%;
-      background-color: #ddd;
-      margin-top: 8px;
-      margin-bottom: 10px;
+  
+      .card .pause-btn:before {
+        content: "\f04c";
+        font-family: "FontAwesome";
       }
-      .slider-bar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 0%;
-      background-color: black;
-      }
-      .slider-thumb {
-      position: absolute;
-      top: -7px;
-      left: -7px;
-      height: 18px;
-      width: 18px;
-      border-radius: 50%;
-      background-color: red;
-      cursor: pointer;
-      margin-left: -10px;
-      }
-      .lyrics-container {
-      position: absolute;
-      bottom: 90px;
-      left: 0;
-      width: 100%;
-      max-height: 60px; /* Set the maximum height of the lyrics container */
-      overflow-y: auto; /* Enable vertical scrolling */
-      }
-      .g{
-      color: white;
-      font-size: 5px;
-      width: 10%;
-      border-style: groove;
-      height: auto;
-      display: inline-block;
-      margin-left: 100px;
-      margin-right: auto;
-      border-width: 5px;
-      margin-top: 10px;
-      background: linear-gradient(0deg, black 30%, rgb(132, 1, 1) 100%); 
-      border-radius: 10px;
-      border-color: rgb(120, 1, 1);
-      }
-      .music-player {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-
-
-
-
-
-
-
-   </style>
+    </style>
    <body>
      
   
@@ -174,102 +117,117 @@
       
 
 
-      <div class="music-card">
-         <img src="/images/dieforyou.jpeg" alt="Music Cover">
-         <h3>Die for you</h3>
-         
-         <div class="audio-player">
-            <audio controlsList="nodownload noplaybackrate">
-               <source src="music/dieforyou.mp3" type="audio/mpeg">
-            </audio>
-            <button class="play-button">Play</button>
-            <button class="volume-button">Volume</button>
-            <span id="time-display">0:00</span>
-            <div class="custom-slider">
-               <div class="slider-bar"></div>
-               <div class="slider-thumb"></div>
-            </div>
-         </div>
-      </div>
-      <div class="music-card">
-         <img src="/images/dieforyou.jpeg" alt="Music Cover">
-         <h3>Die for you</h3>
-         
-         <div class="audio-player">
-            <audio controlsList="nodownload noplaybackrate">
-               <source src="music/dieforyou.mp3" type="audio/mpeg">
-            </audio>
-            <button class="play-button">Play</button>
-            <button class="volume-button">Volume</button>
-            <span id="time-display">0:00</span>
-            <div class="custom-slider">
-               <div class="slider-bar"></div>
-               <div class="slider-thumb"></div>
-            </div>
-         </div>
-      </div>
+      <div id="music-cards-container"></div>
+
 
       <br>
       <br>
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKuDjoPEXwQY4-GHZiqPfucUB3VasuSIycoJtPKs3gA7UTpQ/viewform?embedded=true" width="640" height="438" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRkCjtbOe2t-OwJmEnZs93se2JvBGFfDNEjH7orcHtNDtnDQR3G6Ph1_T6fpY5CAuMKIeBukYwslOSR/pubhtml?widget=true&amp;headers=false" width="640" height="400"></iframe>
       <script>
-         const audio = document.querySelector('audio');
-         const playButton = document.querySelector('.play-button');
-         const volumeButton = document.querySelector('.volume-button');
-         const timeDisplay = document.querySelector('#time-display');
-         const sliderBar = document.querySelector('.slider-bar');
-         const sliderThumb = document.querySelector('.slider-thumb');
+         const musicData = [
+           {
+             title: 'die for you',
+             artist: 'Joji',
+             image: '/images/place.png',
+             audio: 'dieforyou.mp3',
+           },
+           {
+             title: 'Song 2',
+             artist: 'Artist 2',
+             image: '/images/place.png',
+             audio: '',
+           },
+           {
+             title: 'Song 3',
+             artist: 'Artist 3',
+             image: '/images/place.png',
+             audio: '',
+           },
+           
+         ];
+              
          
-         sliderThumb.addEventListener('mousedown', () => {
-           document.addEventListener('mousemove', moveThumb);
-           document.addEventListener('mouseup', releaseThumb);
-         });
+         const container = document.getElementById('music-cards-container');
          
-         function moveThumb(event) {
-           const sliderRect = sliderBar.getBoundingClientRect();
-           const position = (event.clientX - sliderRect.left) / sliderRect.width;
-           audio.currentTime = audio.duration * position;
-           updateTimeDisplay();
-         }
+         musicData.forEach((data) => {
+           const card = document.createElement('div');
+           card.classList.add('card');
          
-         function releaseThumb() {
-           document.removeEventListener('mousemove', moveThumb);
-           document.removeEventListener('mouseup', releaseThumb);
-         }
+           const image = document.createElement('img');
+           image.src = data.image;
+           card.appendChild(image);
          
-         function updateTimeDisplay() {
-           const minutes = Math.floor(audio.currentTime / 60);
-           const seconds = Math.floor(audio.currentTime % 60).toString().padStart(2, '0');
-           timeDisplay.textContent = `${minutes}:${seconds}`;
-         }
+           const audio = document.createElement('audio');
+           audio.src = data.audio;
+           card.appendChild(audio);
          
-         audio.addEventListener('timeupdate', () => {
-           const position = audio.currentTime / audio.duration;
-           sliderThumb.style.left = `${position * 100}%`;
-           updateTimeDisplay();
-         });
+           const title = document.createElement('h2');
+           title.textContent = data.title;
+           card.appendChild(title);
          
-         playButton.addEventListener('click', () => {
-           if (audio.paused) {
+           const artist = document.createElement('p');
+           artist.textContent = data.artist;
+           card.appendChild(artist);
+         
+           const playButton = document.createElement('button');
+           playButton.classList.add('btn', 'play');
+           playButton.textContent = 'Play';
+           card.appendChild(playButton);
+         
+           const pauseButton = document.createElement('button');
+           pauseButton.classList.add('btn', 'pause');
+           pauseButton.textContent = 'Pause';
+           card.appendChild(pauseButton);
+         
+           // Hide the pause button initially
+           pauseButton.style.display = 'none';
+         
+           const progress = document.createElement('progress');
+           progress.classList.add('progress-bar');
+           progress.value = 0;
+           progress.max = 100;
+           card.appendChild(progress);
+         
+           const duration = document.createElement('div');
+           duration.classList.add('duration');
+           card.appendChild(duration);
+         
+           const formatTime = (seconds) => {
+             const min = Math.floor(seconds / 60);
+             const sec = Math.floor(seconds % 60);
+             return `${min}:${sec < 10 ? '0' : ''}${sec}`;
+           };
+         
+           const updateProgress = () => {
+             const value = (audio.currentTime / audio.duration) * 100;
+             progress.value = value;
+             duration.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+           };
+         
+           const playAudio = () => {
              audio.play();
-             playButton.textContent = 'Pause';
-           } else {
+             playButton.style.display = 'none';
+             pauseButton.style.display = 'inline-block';
+             playButton.classList.remove('play');
+             playButton.classList.add('pause');
+           };
+         
+           const pauseAudio = () => {
              audio.pause();
-             playButton.textContent = 'Play';
-           }
+             playButton.style.display = 'inline-block';
+             pauseButton.style.display = 'none';
+             playButton.classList.remove('pause');
+             playButton.classList.add('play');
+           };
+         
+           playButton.addEventListener('click', playAudio);
+           pauseButton.addEventListener('click', pauseAudio);
+           audio.addEventListener('timeupdate', updateProgress);
+         
+           container.appendChild(card);
          });
          
-         volumeButton.addEventListener('click', () => {
-           audio.muted = !audio.muted;
-           if (audio.muted) {
-             volumeButton.textContent = 'Unmute';
-           } else {
-             volumeButton.textContent = 'Mute';
-           }
-         });
-         
-      </script>
-      <script src="code.js"></script>
+           </script>
       <script src="/js/jquery.min.js"></script>
       <script src="/js/particles.js"></script>
       <script src="/js/app.js"></script>
