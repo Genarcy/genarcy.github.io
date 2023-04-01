@@ -1,5 +1,7 @@
 <html>
    <head>
+      <script src="music-player.js"></script>
+
       <script src="/unbed-stable/unbed.js"></script> 
       <script async src="https://arc.io/widget.min.js#UvHfwCmt"></script>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7811694788510673"
@@ -189,11 +191,27 @@
             </div>
          </div>
       </div>
+      <div class="music-card">
+         <img src="/images/dieforyou.jpeg" alt="Music Cover">
+         <h3>Die for you</h3>
+         
+         <div class="audio-player">
+            <audio controlsList="nodownload noplaybackrate">
+               <source src="music/dieforyou.mp3" type="audio/mpeg">
+            </audio>
+            <button class="play-button">Play</button>
+            <button class="volume-button">Volume</button>
+            <span id="time-display">0:00</span>
+            <div class="custom-slider">
+               <div class="slider-bar"></div>
+               <div class="slider-thumb"></div>
+            </div>
+         </div>
+      </div>
 
       <br>
       <br>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKuDjoPEXwQY4-GHZiqPfucUB3VasuSIycoJtPKs3gA7UTpQ/viewform?embedded=true" width="640" height="438" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRkCjtbOe2t-OwJmEnZs93se2JvBGFfDNEjH7orcHtNDtnDQR3G6Ph1_T6fpY5CAuMKIeBukYwslOSR/pubhtml?widget=true&amp;headers=false" width="640" height="400"></iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKuDjoPEXwQY4-GHZiqPfucUB3VasuSIycoJtPKs3gA7UTpQ/viewform?embedded=true" width="640" height="438" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRkCjtbOe2t-OwJmEnZs93se2JvBGFfDNEjH7orcHtNDtnDQR3G6Ph1_T6fpY5CAuMKIeBukYwslOSR/pubhtml?widget=true&amp;headers=false" width="640" height="400"></iframe>
       <script>
          const audio = document.querySelector('audio');
          const playButton = document.querySelector('.play-button');
@@ -202,13 +220,11 @@
          const sliderBar = document.querySelector('.slider-bar');
          const sliderThumb = document.querySelector('.slider-thumb');
          
-         // Initialize the slider
          sliderThumb.addEventListener('mousedown', () => {
            document.addEventListener('mousemove', moveThumb);
            document.addEventListener('mouseup', releaseThumb);
          });
          
-         // Handle the slider events
          function moveThumb(event) {
            const sliderRect = sliderBar.getBoundingClientRect();
            const position = (event.clientX - sliderRect.left) / sliderRect.width;
