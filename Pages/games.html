@@ -152,18 +152,13 @@
 }
 
 
-body,
       .box{
          background-color: #0e0e0e;
          border-radius: 10px;
       }
 
       </style>
-      <!-- .desc {
-         color: rgb(232, 14, 14);
-         font-size: 16px;
-         padding: 5px;
-         }-->
+   
       <script>
         
       
@@ -186,7 +181,7 @@ body,
                <li><a href="/Pages/math.html">Proxy</a></li>
 
      
-               <a class="cta" id="buttonclick" onclick="openinblank()"><button>about:blank</button></a>
+               <a class="cta" id="buttonclick" onclick="openIframe()"><button>about:blank</button></a>
            </ul>
          </nav>
        </header>
@@ -1369,10 +1364,24 @@ body,
             if (window.top.location.href == "about:blank") {
                 document.getElementById("buttonclick").remove();
             }
-            
-         
-           
            </script>
+           <script>	function openIframe() {
+            var url = window.location.href;
+            var newTab = window.open('about:blank');
+               newTab.addEventListener('load', function() {
+               var iframe = document.createElement('iframe');
+               iframe.src = url;
+   
+               iframe.style.position = "fixed";
+               iframe.style.top = "0";
+               iframe.style.left = "0";
+               iframe.style.width = "100%";
+               iframe.style.height = "100%";
+   
+               newTab.document.body.appendChild(iframe);
+            });
+         }
+         </script>
        
       <script src="/js/jquery.min.js"></script>
       <script src="/js/particles.js"></script>
