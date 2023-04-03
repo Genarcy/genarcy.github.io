@@ -1,4 +1,4 @@
-function openIframe() {
+function openInIframe() {
     var url = window.location.href;
     
     var newTab = window.open('about:blank');
