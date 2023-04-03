@@ -174,37 +174,16 @@
          <nav>
            <ul class="nav__links">
                <li><a class="size" href="/index.html">Home</a></li>
-               <!--<li><a class="size" href="/Pages/bookmarks.html">Hacks</a></li>
-               <li><a class="size" href="/Pages/partners.html">Partners</a></li>
-               <li><a class="size" href="/Pages/chat.html">Chat</a></li>-->
+               <li><a class="size" href="/Pages/games.html">Games</a></li>
                <li><a class="size" href="/Pages/music.html">Music</a></li>
-               <li><a href="/Pages/math.html">Proxy</a></li>
+               <li><a class="size" href="/proxy/index.html">Proxy</a></li>
 
      
-               <a class="cta" id="buttonclick" onclick="openinblank()"><button>about:blank</button></a>
-           </ul>
+               <a class="cta" id="buttonclick" onclick="openInIframe()"><button>about:blank</button></a>
+            </ul>
          </nav>
        </header>
       <div class="center-screen">
-      
-      <div style="margin-left: 20px; color: rgb(128, 0, 0); margin-top: 40px; padding-top: 10px; margin-bottom: 50px; font-size: 30px" id='randomtext'></div>
-
-      <script src="/js/search.js"></script>
-      <script src="/js/games.js"></script>
-<script>
-    var sentences = new Array("Please give us game request!", "Do you want fact on here?", "Games for fun?", "noah is dumb", "yes", "Shoutout to ryan", "Request for games plz", "who am i?", "No u", "Pwease tell your friends", "https://discord.gg/UJ5NszstAv", "0rca#7089", "your mom", "did you know Avocados are a fruit, not a vegetable?", "did you know 0rca is human!?", "HUH?", "smileman52 wus here", "UwU", "If a cabby drives a cab, then who drives a bus?", "What has a neck but no head?", "Volley ball sucks hehe", "0rca got rizz", "i think purple is better", "Meme.rip was here ;)");
-            console.log(Math.round(Math.random() * 7));
-            document.getElementById("test")
-            document.getElementById('randomtext').innerHTML = sentences[Math.round(Math.random() * sentences.length)];
-        </script>
-        <center>
-         <a onclick="randomlink()" style="background-color: rgb(138, 7, 7);" class="button">Random Game Button</a><br><br>
-
-    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." >
-    </center>
-    <br>
-    <br>
-   
          <div id="games" class="flex-container">
             <div class="card">
                <div class="card-header-row" onclick="location.href='/uv/service/hvtrs8%2F-dksaopd%2Ccmm-';" style="cursor: pointer;">
@@ -214,31 +193,9 @@
                   </div>
                </div>
 </div>
-      <!-- begin wwww.htmlcommentbox.com 
-         <div id="HCB_comment_box"> <a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments... </div>
-         <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-         <script type="text/javascript" id="hcb">
-            if(!window.hcb_user) {
-            	hcb_user = {};
-            }(function() {
-            	var s = document.createElement("script"),
-            		l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
-            		h = "https://www.htmlcommentbox.com";
-            	s.setAttribute("type", "text/javascript");
-            	s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&opts=16798&num=10&ts=1659545601597");
-            	if(typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
-            })(); 
-         </script>
-          end www.htmlcommentbox.com -->
-          <script type="text/javascript">
-            if (window.top.location.href == "about:blank") {
-                document.getElementById("buttonclick").remove();
-            }
-            
-         
-           
-           </script>
-       
+
+       <script src="/js/aboutblank.js"></script>
+
       <script src="/js/jquery.min.js"></script>
       <script src="/js/particles.js"></script>
       <script src="/js/app.js"></script>

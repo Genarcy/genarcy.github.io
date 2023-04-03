@@ -203,14 +203,8 @@ margin-right: -300px;
     <nav>
       <ul class="nav__links">
         <li><a href="/Pages/games.html">Games</a></li>
-      <!--  <li><a href="/Pages/bookmarks.html">Apps</a></li>
-        <li><a href="/Pages/partners.html">Partners</a></li>
-        <li><a href="/Pages/chat.html">Chat</a></li>-->
         <li><a href="/Pages/music.html">Music</a></li>
         <li><a href="/proxy/index.html">Proxy</a></li>
-
-        
-
         <a class="cta" id="buttonclick" onclick="openInIframe()"><button>about:blank</button></a>
       </ul>
     </nav>
@@ -250,7 +244,7 @@ margin-right: -300px;
 </body>
 
 <canvas id="myCanvas" style="margin: 0px; padding: 0px; position: fixed; z-index: -1; top: 0; left: 0;"></canvas>
-
+<script src="/js/aboutblank.js"></script>
 <script>
   
   function animate() {
@@ -297,28 +291,7 @@ margin-right: -300px;
 
  
  </script>
- <script>
- 	function openIframe() {
-			var url = window.location.href;
-			
-			var newTab = window.open('about:blank');
-
-			newTab.addEventListener('load', function() {
-				var iframe = document.createElement('iframe');
-
-				iframe.src = url;
-
-				iframe.style.position = "fixed";
-				iframe.style.top = "0";
-				iframe.style.left = "0";
-				iframe.style.width = "100%";
-				iframe.style.height = "100%";
-
-				// Add the iframe to the new tab
-				newTab.document.body.appendChild(iframe);
-			});
-		}
- </script>
+ 
 
 
 </html>
