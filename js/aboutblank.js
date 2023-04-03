@@ -14,6 +14,9 @@ function openInIframe() {
         iframe.style.width = "100%";
         iframe.style.height = "100%";
 
+        // Add the sandbox attribute with allow-same-origin value
+        iframe.setAttribute('sandbox', 'allow-same-origin');
+
         // Add the iframe to the new tab
         newTab.document.body.appendChild(iframe);
     });
