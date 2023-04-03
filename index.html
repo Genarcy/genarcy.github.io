@@ -211,7 +211,7 @@ margin-right: -300px;
 
         
 
-        <a class="cta" id="buttonclick" onclick="openinblank()"><button>about:blank</button></a>
+        <a class="cta" id="buttonclick" onclick="openInIframe()"><button>about:blank</button></a>
       </ul>
     </nav>
   </header>
@@ -296,6 +296,13 @@ margin-right: -300px;
   
 
  
+ </script>
+ <script>
+  function openInIframe() {
+  var iframe = document.createElement("iframe");
+  iframe.src = window.location.href;
+  document.body.appendChild(iframe);
+}
  </script>
 
 
