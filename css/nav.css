@@ -49,6 +49,12 @@ header {
     padding-bottom: 0%;
 }
 .logo1
+{
+    width: 150px;
+    cursor: pointer;
+
+    padding-bottom: 0%;
+}
 
 .nav__links {
 
