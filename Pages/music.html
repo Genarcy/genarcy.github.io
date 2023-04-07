@@ -226,84 +226,100 @@ div.scroll a {
               
          
          const container = document.getElementById('music-cards-container');
-         
-         musicData.forEach((data) => {
-           const card = document.createElement('div');
-           card.classList.add('card');
-         
-           const image = document.createElement('img');
-           image.src = data.image;
-           card.appendChild(image);
-         
-           const audio = document.createElement('audio');
-           audio.src = data.audio;
-           card.appendChild(audio);
-         
-           const title = document.createElement('h2');
-           title.textContent = data.title;
-           card.appendChild(title);
-         
-           const artist = document.createElement('p');
-           artist.textContent = data.artist;
-           card.appendChild(artist);
-         
-           const playButton = document.createElement('button');
-           playButton.classList.add('btn', 'play');
-           playButton.textContent = 'Play';
-           card.appendChild(playButton);
-         
-           const pauseButton = document.createElement('button');
-           pauseButton.classList.add('btn', 'pause');
-           pauseButton.textContent = 'Pause';
-           card.appendChild(pauseButton);
-         
-           // Hide the pause button initially
-           pauseButton.style.display = 'none';
-         
-           const progress = document.createElement('progress');
-           progress.classList.add('progress-bar');
-           progress.value = 0;
-           progress.max = 100;
-           card.appendChild(progress);
-         
-           const duration = document.createElement('div');
-           duration.classList.add('duration');
-           card.appendChild(duration);
-         
-           const formatTime = (seconds) => {
-             const min = Math.floor(seconds / 60);
-             const sec = Math.floor(seconds % 60);
-             return `${min}:${sec < 10 ? '0' : ''}${sec}`;
-           };
-         
-           const updateProgress = () => {
-             const value = (audio.currentTime / audio.duration) * 100;
-             progress.value = value;
-             duration.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
-           };
-         
-           const playAudio = () => {
-             audio.play();
-             playButton.style.display = 'none';
-             pauseButton.style.display = 'inline-block';
-             playButton.classList.remove('play');
-             playButton.classList.add('pause');
-           };
-         
-           const pauseAudio = () => {
-             audio.pause();
-             playButton.style.display = 'inline-block';
-             pauseButton.style.display = 'none';
-             playButton.classList.remove('pause');
-             playButton.classList.add('play');
-           };
-         
-           playButton.addEventListener('click', playAudio);
-           pauseButton.addEventListener('click', pauseAudio);
-           audio.addEventListener('timeupdate', updateProgress);
-         
-           container.appendChild(card);
-         });
+
+musicData.forEach((data) => {
+  const card = document.createElement('div');
+  card.classList.add('card');
+
+  const image = document.createElement('img');
+  image.src = data.image;
+  card.appendChild(image);
+
+  const audio = document.createElement('audio');
+  audio.src = data.audio;
+  card.appendChild(audio);
+
+  const title = document.createElement('h2');
+  title.textContent = data.title;
+  card.appendChild(title);
+
+  const artist = document.createElement('p');
+  artist.textContent = data.artist;
+  card.appendChild(artist);
+
+  const playButton = document.createElement('button');
+  playButton.classList.add('btn', 'play');
+  playButton.textContent = 'Play';
+  card.appendChild(playButton);
+
+  const pauseButton = document.createElement('button');
+  pauseButton.classList.add('btn', 'pause');
+  pauseButton.textContent = 'Pause';
+  card.appendChild(pauseButton);
+
+  const replayButton = document.createElement('button');
+  replayButton.classList.add('btn', 'replay');
+  replayButton.textContent = 'Replay';
+  card.appendChild(replayButton);
+
+  // Hide the pause button and replay button initially
+  pauseButton.style.display = 'none';
+  replayButton.style.display = 'none';
+
+  const progress = document.createElement('progress');
+  progress.classList.add('progress-bar');
+  progress.value = 0;
+  progress.max = 100;
+  card.appendChild(progress);
+
+  const duration = document.createElement('div');
+  duration.classList.add('duration');
+  card.appendChild(duration);
+
+  const formatTime = (seconds) => {
+    const min = Math.floor(seconds / 60);
+    const sec = Math.floor(seconds % 60);
+    return `${min}:${sec < 10 ? '0' : ''}${sec}`;
+  };
+
+  const updateProgress = () => {
+    const value = (audio.currentTime / audio.duration) * 100;
+    progress.value = value;
+    duration.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+  };
+
+  const playAudio = () => {
+    audio.play();
+    playButton.style.display = 'none';
+    pauseButton.style.display = 'inline-block';
+    replayButton.style.display = 'none';
+    playButton.classList.remove('play');
+    playButton.classList.add('pause');
+  };
+
+  const pauseAudio = () => {
+    audio.pause();
+    playButton.style.display = 'inline-block';
+    pauseButton.style.display = 'none';
+    replayButton.style.display = 'inline-block';
+    playButton.classList.remove('pause');
+    playButton.classList.add('play');
+  };
+
+  const replayAudio = () => {
+    audio.currentTime = 0;
+    audio.play();
+    pauseButton.style.display = 'inline-block';
+    replayButton.style.display = 'none';
+  };
+
+  playButton.addEventListener('click', playAudio);
+  pauseButton.addEventListener('click', pauseAudio);
+  replayButton.addEventListener('click', replayAudio);
+  audio.addEventListener('timeupdate', updateProgress);
+
+  container.appendChild(card);
+});
          
            </script>
            <script src="/js/aboutblank.js"></script>
