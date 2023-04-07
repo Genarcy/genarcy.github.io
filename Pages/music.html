@@ -257,14 +257,14 @@ musicData.forEach((data) => {
   pauseButton.textContent = 'Pause';
   card.appendChild(pauseButton);
 
+  // Hide the pause button initially
+  pauseButton.style.display = 'none';
+
   const replayButton = document.createElement('button');
   replayButton.classList.add('btn', 'replay');
   replayButton.textContent = 'Replay';
-  card.appendChild(replayButton);
-
-  // Hide the pause button and replay button initially
-  pauseButton.style.display = 'none';
   replayButton.style.display = 'none';
+  card.appendChild(replayButton);
 
   const progress = document.createElement('progress');
   progress.classList.add('progress-bar');
@@ -286,13 +286,18 @@ musicData.forEach((data) => {
     const value = (audio.currentTime / audio.duration) * 100;
     progress.value = value;
     duration.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+
+    if (audio.currentTime === audio.duration) {
+      playButton.style.display = 'none';
+      pauseButton.style.display = 'none';
+      replayButton.style.display = 'inline-block';
+    }
   };
 
   const playAudio = () => {
     audio.play();
     playButton.style.display = 'none';
     pauseButton.style.display = 'inline-block';
-    replayButton.style.display = 'none';
     playButton.classList.remove('play');
     playButton.classList.add('pause');
   };
@@ -301,16 +306,15 @@ musicData.forEach((data) => {
     audio.pause();
     playButton.style.display = 'inline-block';
     pauseButton.style.display = 'none';
-    replayButton.style.display = 'inline-block';
     playButton.classList.remove('pause');
     playButton.classList.add('play');
   };
 
   const replayAudio = () => {
     audio.currentTime = 0;
-    audio.play();
-    pauseButton.style.display = 'inline-block';
     replayButton.style.display = 'none';
+    playButton.style.display = 'inline-block';
+    pauseButton.style.display = 'none';
   };
 
   playButton.addEventListener('click', playAudio);
@@ -320,7 +324,7 @@ musicData.forEach((data) => {
 
   container.appendChild(card);
 });
-         
+
            </script>
            <script src="/js/aboutblank.js"></script>
 
