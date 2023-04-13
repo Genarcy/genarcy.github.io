@@ -1,62 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600;700&display=swap');
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #171717;
-}
 
-li, a {
+
+li, a, button {
     font-family: "Overpass", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+    font-size: 17px;
     color: #edf0f1;
     text-decoration: none;
+ padding: auto;
+
+    margin: 0px;
+    margin-bottom: -100px;
+    margin-top: -100px;
+
+
+
+}
+p{
+    font-family: "Overpass", sans-serif;
+      color: rgb(154, 24, 24);
+
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-    
+    padding: 30px 10%;
+    padding-bottom: 0%;
+    margin-bottom: 40px;
+      color: rgba(90, 24, 154, 0.1);
+
+
+
+
+    padding-top: 0%;
+
+
+
+
+
+
 }
 
 .logo {
     cursor: pointer;
-    height: 50px
+
+    padding-bottom: 0%;
+}
+.logo1
+{
+    width: 50px;
+    cursor: pointer;
+
+    padding-bottom: 0%;
 }
 
 .nav__links {
-    list-style: none;
+
+    padding-bottom: 0%;
+
 }
 
 .nav__links li {
     display: inline-block;
-    padding: 0px 15px;
+    padding: 0px 20px;
+
+    padding-bottom: 0%;
+
 }
 
-.fas {
+.nav__links li a {
     transition: all 0.3s ease 0s;
+
+    padding-bottom: 0%;
+
+
 }
 
-.fas:hover {
-    color: #9D1F1F !important;
+.nav__links li a:hover {
+    color: rgb(154, 24, 24);
+
+
+
+
 }
-.fab {
+
+
+ul.nav__links {
+
+
+
+}
+
+.logo {
+    height: 60px;
+
+    padding-bottom: 0%;
+
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(154, 24, 24);
+
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
     transition: all 0.3s ease 0s;
+    margin-left: 20px;
+
+
 }
 
-.fab:hover {
-    color: #9D1F1F !important;
+button:hover {
+    background-color: rgba(154, 24, 24, 0.7);
 }
-
-header, nav, li, ul, a, .logo {
-    background-color: #111;
-}
-
-.mis a {
-    display: inline-block;
-    padding: 0px 15px;
+.text {
+    color: rgb(154, 24, 24);
+    font-size: x-large;
 }
