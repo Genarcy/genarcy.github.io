@@ -1,107 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600;700&display=swap');
-
-
-
-li, a, button {
-    font-family: "Overpass", sans-serif;
-    font-size: 17px;
-    color: #edf0f1;
-    text-decoration: none;
- padding: auto;
-
-    margin: 0px;
-    margin-bottom: -100px;
-    margin-top: -100px;
-
-
-
-}
-p{
-    font-family: "Overpass", sans-serif;
-      color: rgb(154, 24, 24);
-
-}
-
-header {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
-    padding-bottom: 0%;
-    margin-bottom: 40px;
-      color: rgba(90, 24, 154, 0.1);
- padding-top: 0%;
-}
-
-.logo {
+    padding: 0 20px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .navbar-links a {
+    color: white;
+  text-decoration: none; 
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  
+  .navbar-links a:hover {
+  text-decoration: none;}
+  
+  .navbar-logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Navbar Toggle Button */
+  .navbar-toggle {
+    display: none;
+  background: transparent;
+    backdrop-filter: blur(5px);  border: none;
+    padding: 0;
     cursor: pointer;
-
-    padding-bottom: 0%;
-}
-.logo1
-{
-    width: 50px;
-    cursor: pointer;
-
-    padding-bottom: 0%;
-}
-
-.nav__links {
-
-    padding-bottom: 0%;
-
-}
-
-.nav__links li {
-    display: inline-block;
-    padding: 0px 20px;
-
-    padding-bottom: 0%;
-
-}
-
-.nav__links li a {
-    transition: all 0.3s ease 0s;
-
-    padding-bottom: 0%;
-
-
-}
-
-.nav__links li a:hover {
-    color: rgb(154, 24, 24);
-
-
-
-
-}
-
-
-
-.logo {
-    height: 60px;
-
-    padding-bottom: 0%;
-
-}
-
-button {
-    padding: 9px 25px;
-    background-color: rgb(154, 24, 24);
-
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    margin-left: 20px;
-
-
-}
-
-button:hover {
-    background-color: rgba(154, 24, 24, 0.7);
-}
-.text {
-    color: rgb(154, 24, 24);
-    font-size: x-large;
-}
+  }
+  
+  .navbar-toggle-icon {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navbar-toggle-icon:focus,
+  .navbar-toggle-icon:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 600px) {
+    .navbar {
+      height: auto;
+      padding: 10px 20px;
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+  background: transparent;
+    backdrop-filter: blur(5px);    padding: 10px;
+    }
+  
+    .navbar-links a {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-logo {
+      margin-bottom: 10px;
+      width: 80px;
+      font-size: 80px;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .navbar-toggle-icon {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background-color: white;
+      margin: 5px;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .navbar-toggle-icon:first-child {
+      margin-top: 0;
+    }
+  
+    .navbar-toggle-icon:last-child {
+      margin-bottom: 0;
+    }
+  
+    .navbar-links.show {
+      display: flex;
+    }
+  
+    .navbar-links.show .navbar-toggle-icon:first-child {
+      transform: rotate(45deg);
+    }
+  
+    .navbar-links.show .navbar-toggle-icon:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .navbar-links.show .navbar-toggle-icon:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+  
+  @media screen and (min-width: 601px) {
+    .navbar {
+      height: 80px;
+    }
+  
+    .navbar-links {
+      justify-content: flex-end;
+      width: auto;
+    }
+  
+    .navbar-logo {
+      margin-right: auto;
+          width: 80px;
+      font-size: 30px;
+  
+    }
+  }
+  
+  @media screen and (min-width: 901px) {
+    .navbar-links {
+      width: 30%;
+    }
+  }
+  
