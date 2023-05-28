@@ -1,18 +1,17 @@
 <html>
-	<head>
-		<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-				<title>Genarcy</title>
-				<link href="css/style.css" rel="stylesheet" type="text/css" />
-				<link href="css/navbar.css" rel="stylesheet" type="text/css" />
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genarcy</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-9DIukDzbuwFI7g+CKXeWaCjKk3Dgklv6f5K7k9+Pce6lRURQKc+nWUJQo/0OaCbImAhZYsqNsl44u5bKNTl6BA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-				<script src="https://kit.fontawesome.com/b314b192d4.js" crossorigin="anonymous"></script>
-				<style>
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans%27);
+  <script src="https://kit.fontawesome.com/b314b192d4.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-    )
     * {
       margin: 0;
       padding: 0;
@@ -21,13 +20,16 @@
 
     body {
       background-color: linear-gradient(to bottom right, #4C0033, #790252, #AF0171, #E80F88);
-      background-size: contain;
+      background-size: cover; /* Change background-size to 'cover' */
       background-repeat: no-repeat;
       background-position: center;
     }
 
     .container {
-      /* Remove height property */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh; /* Add min-height to ensure the content covers the whole screen */
     }
 
     /* Rest of the CSS code */
@@ -44,9 +46,9 @@
     }
 
     #particles-js .particle {
-      border-radius: 50%; /* make the particles circular */
-      opacity: 0.8; /* set the opacity of the particles */
-      border: 2px solid rgba(255, 255, 255, 0.5); /* set the border with transparent edges */
+      border-radius: 50%;
+      opacity: 0.8;
+      border: 2px solid rgba(255, 255, 255, 0.5);
     }
 
     .lilah {
@@ -59,33 +61,35 @@
       font-family: "Open Sans", sans-serif;
     }
   </style>
-			</head>
-			<body>
-            <!--NavBar-->
-				<nav class="navbar">
-					<a href="#" style="text-decoration: none;">
-						<div class="navbar-logo">Genarcy</div>
-					</a>
-					<div style="display: flex; align-items: center;">
-						<button class="navbar-toggle" onclick="toggleMenu()">
-							<span class="navbar-toggle-icon"></span>
-							<span class="navbar-toggle-icon"></span>
-							<span class="navbar-toggle-icon"></span>
-						</button>
-						<div class="navbar-links" id="navbarLinks">
-							<a href="#" class="fa-solid fa-house"></a>
-							<a href="#" class="fa-solid fa-gamepad"></a>
-							<a href="#"  class="fa-solid fa-people-group"></a>
-							<a href="#"  class="fa-solid fa-handshake"></a>
-						</div>
-					</div>
-				</nav>
-            <!--end of navbar 0RCA-->
-				<div class="container">
-					<canvas id="canvas"></canvas>
-					<h1>COMING SOON!?!?!?!</h1>
-				</div>
-				<script>
+</head>
+
+<body>
+  <!--NavBar-->
+  <nav class="navbar">
+    <a href="#" style="text-decoration: none;">
+      <div class="navbar-logo">Genarcy</div>
+    </a>
+    <div style="display: flex; align-items: center;">
+      <button class="navbar-toggle" onclick="toggleMenu()">
+        <span class="navbar-toggle-icon"></span>
+        <span class="navbar-toggle-icon"></span>
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <div class="navbar-links" id="navbarLinks">
+        <a href="#" class="fa-solid fa-house"></a>
+        <a href="#" class="fa-solid fa-gamepad"></a>
+        <a href="#" class="fa-solid fa-people-group"></a>
+        <a href="#" class="fa-solid fa-handshake"></a>
+      </div>
+    </div>
+  </nav>
+  <!--end of navbar 0RCA-->
+  <div class="container">
+    <canvas id="canvas"></canvas>
+    <h1>COMING SOON!?!?!?!</h1>
+  </div>
+
+  <script>
     // Set up canvas
     var canvas = document.querySelector('canvas');
     var ctx = canvas.getContext('2d');
@@ -123,7 +127,7 @@
         gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
         ctx.fillStyle = gradient;
         ctx.strokeStyle = "#FFFFFF";
-        ctx.lineWidth = 1; // Change this value to adjust the thickness of the circle's edges
+        ctx.lineWidth = 1;
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2, false);
         ctx.fill();
         ctx.stroke();
@@ -158,7 +162,7 @@
       loadingIcon.style.display = 'inline-block';
       // Add your loading logic here, such as making an API request or performing an action
     }
-  
-				</script>
-			</body>
-		</html>
+  </script>
+</body>
+
+</html>
