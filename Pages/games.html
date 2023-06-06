@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Genarcy</title>
-  <link href="/css/nav.css" rel="stylesheet" type="text/css" />
+  <link href="/css/navbar.css" rel="stylesheet" type="text/css" />
   <link href="/css/game.css" rel="stylesheet" type="text/css" />
   <script src="https://kit.fontawesome.com/b314b192d4.js" crossorigin="anonymous"></script>
   <style>
@@ -10,6 +10,10 @@
     * {
       margin: 0;
       padding: 0;
+    }
+    
+    h1 {
+      text-color: white;
     }
   
     body {
@@ -107,27 +111,27 @@
   </style>
 </head>
 <body>
-   <!--NavBar-->
-   <nav class="navbar">
-      <a href="#" style="text-decoration: none;">
-        <div class="navbar-logo">Genarcy</div>
-      </a>
-      <div style="display: flex; align-items: center;">
-        <button class="navbar-toggle" onclick="toggleMenu()">
-          <span class="navbar-toggle-icon"></span>
-          <span class="navbar-toggle-icon"></span>
-          <span class="navbar-toggle-icon"></span>
-        </button>
-        <div class="navbar-links" id="navbarLinks">
-          <a href="#" class="fa-solid fa-house"></a>
-          <a href="Pages/games.html" class="fa-solid fa-gamepad"></a>
-          <a href="#" class="fa-solid fa-people-group"></a>
-          <a href="#" class="fa-solid fa-handshake"></a>
-        </div>
+  <!--NavBar-->
+  <nav class="navbar">
+    <a href="index.html" style="text-decoration: none;">
+      <div class="navbar-logo">Genarcy</div>
+    </a>
+    <div style="display: flex; align-items: center;">
+      <button class="navbar-toggle" onclick="toggleMenu()">
+        <span class="navbar-toggle-icon"></span>
+        <span class="navbar-toggle-icon"></span>
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <div class="navbar-links" id="navbarLinks">
+        <a href="index.html" class="fa-solid fa-house"></a>
+        <a href="game.html" class="fa-solid fa-gamepad"></a>
+        <a href="people.html" class="fa-solid fa-people-group"></a>
+        <a href="#" class="fa-solid fa-handshake"></a>
       </div>
-    </nav>
-    <!--end of navbar 0RCA-->
-  <h1 style="margin-top: 100px;">Games</h1>
+    </div>
+  </nav>
+  <!--end of navbar 0RCA-->
+  <h1 style="margin-top: 100px; color: white;">Games</h1>
   <div class="card-container"></div>
   <script>
   function toggleMenu() {
@@ -147,42 +151,85 @@
     }
   });
 
-  const gameCards = {
-    "card3": {
-      "title": "Game Card 3",
-      "image": "/img/place.png",
-      "url": "/pages/games/idminor/index.html"
-    },
-    "card2": {
-      "title": "Game Card 2",
-      "image": "/img/place.png",
-      "url": "https://www.example.com/card3"
-    },
-    "card1": {
-      "title": "Game Card 1",
-      "image": "/img/place.png",
-      "url": "https://www.example.com/card3"
-    }
-  };
+    const gameCards = {
+     "card10": {
+        "title": "Cookie Clicker",
+        "image": "https://i.ibb.co/DG8sjwQ/cooke.jpg",
+        "url": "game/cookies-now.html"
+      },
+      "card9": {
+        "title": "Browserquest",
+        "image": "https://i.ibb.co/C6bXkP4/browserquest.jpg",
+        "url": "game/brwserq.html"
+      },
+      "card8": {
+        "title": "Run 2",
+        "image": "https://i.ibb.co/CW2Wmh0/run2.jpg",
+        "url": "game/run2.html"
+      },
+      "card7": {
+        "title": "Subway Surfer",
+        "image": "https://i.ibb.co/cYFFXQk/subway.jpg",
+        "url": "Pages/games/Subway-Surfers/index.html"
+      },
+      "card6": {
+        "title": "Little Alchemy 2",
+        "image": "https://i.ibb.co/CtVDY9y/littlealchemy2.png",
+        "url": "game/little-alch-2.html"
+      },
+      "card5": {
+        "title": "1v1 LOL",
+        "image": "https://i.ibb.co/6Z2Jd9M/1v1lol.jpg",
+        "url": "game/llvlol.html"
+      },
+       "card4": {
+        "title": "Basketball Stars",
+        "image": "https://i.ibb.co/zSS8hYC/basketballstats.jpg",
+        "url": "game/basketballstars.html"
+      },
+      "card3": {
+        "title": "Among US",
+        "image": "https://i.ibb.co/pRp1cMw/among-us.png",
+        "url": "game/amoungus"
+      },
+      "card2": {
+        "title": "Rocket League",
+        "image": "https://i.ibb.co/nnGy9cL/rocket-league.jpg",
+        "url": "game/rocket-league"
+      },
+      "card1": {
+        "title": "Gernarcy Discord",
+        "image": "https://i.ibb.co/3m8QbXd/discord-png.png",
+        "url": "https://discord.gg/weSvd7Td2e"
+      }
+    };
 
-  const sortedCards = {};
-  Object.keys(gameCards).sort().forEach(key => {
-    sortedCards[key] = gameCards[key];
-  });
+    // Sort the game cards by title
+    const sortedCards = {};
+    Object.keys(gameCards)
+      .sort((a, b) => gameCards[a].title.localeCompare(gameCards[b].title))
+      .forEach((key, index) => {
+        sortedCards[`card${index + 1}`] = gameCards[key];
+      });
 
-  const cardContainer = document.querySelector('.card-container');
-  Object.keys(sortedCards).forEach(key => {
-    const card = sortedCards[key];
-    const cardElement = document.createElement('div');
-    cardElement.classList.add('card');
-    cardElement.innerHTML = `
-      <a href="${card.url}">
+    const cardContainer = document.querySelector('.card-container');
+    Object.keys(sortedCards).forEach(key => {
+      const card = sortedCards[key];
+      const cardElement = document.createElement('a');
+      cardElement.classList.add('card');
+      cardElement.href = card.url;
+      cardElement.innerHTML = `
         <img src="${card.image}" alt="${card.title}">
         <h2>${card.title}</h2>
-      </a>
-    `;
-    cardContainer.appendChild(cardElement);
-  });
+      `;
+      cardContainer.appendChild(cardElement);
+    });
+</script>
+  <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+    new Crate({
+        server: '981374268422098954', // Genarcy Development
+        channel: '1008448738957742210' // #🗣-chat
+    })
 </script>
 
 </body>
