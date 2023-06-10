@@ -1,251 +1,27 @@
-<html>
-   <head>
-    <script>
-      if (window.location.href.indexOf("music.html") > -1) {
-  alert("we are closing Forms for right now. We are adding in yalls music!");
+<div class="card">
+        <div class="image">
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimge.kugou.com%2Fstdmusic%2F20150718%2F20150718170411961983.jpg&f=1&nofb=1" alt="">
+        </div>
+        <div class="content">
+            <h1>Die For You</h1>
+            <p>Joji</p>
+            <div class="controlls">
+                <a href=""><i class="fa fa-backward" aria-hidden="true"></i>
+                </a>
+                <a href=""><i class="fa fa-pause" aria-hidden="true"></i>
+              </a>
+                <a href=""><i class="fa fa-forward" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<input type="button" value="sound" onclick="playMusic()" />
+
+
+<script>
+function playMusic(){
+	var music = new Audio('musicfile.mp3');
+	music.play();
 }
-    </script>
-      <script src="music-player.js"></script>
-
-      <script src="/unbed-stable/unbed.js"></script> 
-      <script async src="https://arc.io/widget.min.js#UvHfwCmt"></script>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7811694788510673"
-         crossorigin="anonymous"></script>
-      <meta charset="UTF-8">
-      <meta name="keywords" content="Music, request">
-      <meta http-equiv = "cookie" content = "userid = xyz; expires = Wednesday, 08-Aug-15 23:59:59 GMT;" />
-      <meta name="description" content="Music page for you to listen and to request ">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" type="image/x-icon" href="/images/logo.png">
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XWJJ5LHNR2"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'G-XWJJ5LHNR2');
-      </script> 
-      <link rel="stylesheet" type="text/css" href="/css/index.css">
-      <link rel="stylesheet" href="/css/nav.css" />
-      <title>Music</title>
-   </head>
-   <style>
-     body {
-         height: 100%;
-         background: linear-gradient(230deg, black 0%, rgb(128, 0, 0) 100%); 
-         }
-      .card {
-        display: inline-block;
-        width: 250px;
-        height: 360px;
-        border: 1px solid black;
-        border-radius: 10px;
-        margin: 10px;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-        background-color: black;
-      }
-
-
-  *{
-    color:white;
-  }   
-  
-  
-  
-  .card img {
-        width: 100%;
-        height: 60%;
-        object-fit: cover;
-        border-radius: 10px 10px 0 0;
-      }
-  
-      .card audio {
-        width: 80%;
-        margin: 15px 0;
-      }
-  
-      .card h2 {
-        margin: 10px;
-        
-      }
-  
-      .card p {
-        margin: 5px;
-      }
-  
-      .card .btn {
-        background-color: darkslategray;
-        color: white;
-        padding: 5px 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        position: absolute;
-        bottom: 10px;
-text-align: center;
-        transform: translateX(-50%);
-        margin-bottom: -10px;
-        
-      }
-  
-      .card .btn:hover {
-        background-color: dimgray;
-      }
-  
-      .card .play-btn:before {
-        content: "\f04b";
-        font-family: "FontAwesome";
-      }
-  
-      .card .pause-btn:before {
-        content: "\f04c";
-        font-family: "FontAwesome";
-      }
-      div.scroll {
-  background-color: transparent;
-  overflow: auto;
-  white-space: nowrap;
-}
-
-div.scroll a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-    </style>
-   <body>
-     
-  
-      <div id="particles-js"></div>
-      <header>
-         <a href="/" ><img class="logo" src="/images/logo.png" alt="gif preset" class="preset-file"></a>
-         <p class="text">"Genarcy a fun "math" place"</p>
-         <nav>
-            <ul class="nav__links">
-              <li><a class="size" href="/index.html">Home</a></li>
-              <li><a class="size" href="/Pages/apps.html">Apps</a></li>
-              <li><a class="size" href="/Pages/games.html">Games</a></li>
-              <li><a class="size" href="/proxy/index.html">Proxy</a></li>
-               <a class="cta" id="buttonclick" onclick="loadPage()"><button>about:blank</button></a>
-              </ul>
-         </nav>
-      </header>
-     
-      <h1 style="font-size: large; color: red;">NOTICE:</h1><br>
-      <p>We will post more songs. We are currently working on v5 and v4. Ill post 10 songs each Wednesday so please be patient if you need to contact us about a bug or update please do so at orca@genarcy.ga or join our<a style="color: yellow;" href="https://discord.gg/weSvd7Td2e">Discord!</a></p>
-
-<div class="scroll">
-  <div>
-<p>Die For You - Joji</p>
-<img src="images/dieforyou.jpeg">
-<audio src="music/dieforyou.mp3" controls>
-</div>
-  
-      <div id="music-cards-container"></div>
-</div>
-
-      <br>
-      <br>
-      <!--
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKuDjoPEXwQY4-GHZiqPfucUB3VasuSIycoJtPKs3gA7UTpQ/viewform?embedded=true" width="640" height="438" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRkCjtbOe2t-OwJmEnZs93se2JvBGFfDNEjH7orcHtNDtnDQR3G6Ph1_T6fpY5CAuMKIeBukYwslOSR/pubhtml?widget=true&amp;headers=false" width="640" height="400"></iframe>
-      --><script>
-         const musicData = [
-           {
-             title: 'Die For You',
-             artist: 'Joji',
-             image: 'images/dieforyou.jpeg',
-             audio: 'music/dieforyou.mp3',
-           },
-           {
-             title: 'Comfort of a laughter',
-             artist: 'Roar',
-             image: 'images/goat.png',
-             audio: 'music/confort.mp3',
-           },
-           {
-             title: 'Deep Purple',
-             artist: '#',
-             image: 'images/place.png',
-             audio: 'music/DeepPurple.mp3',
-           },
-           {
-             title: 'Godzilla',
-             artist: 'Eminem',
-             image: 'images/place.png',
-             audio: 'music/godzilla.mp3',
-           },
-           {
-             title: 'Rap God',
-             artist: 'Eminem',
-             image: 'images/place.png',
-             audio: 'music/rapgod.mp3',
-           },
-           {
-             title: 'Without Me',
-             artist: 'Eminem',
-             image: 'images/place.png',
-             audio: 'music/withoutme.mp3',
-           },
-           {
-             title: 'Inside Out',
-             artist: '???',
-             image: 'images/place.png',
-             audio: 'music/inside.mp3',
-           },
-           {
-             title: 'BTSTU',
-             artist: 'Jai Paul (minecraft?)',
-             image: 'images/place.png',
-             audio: 'music/btstu.mp3',
-           },
-           {
-             title: 'Do it again',
-             artist: 'NLE Choppa',
-             image: 'images/place.png',
-             audio: 'music/doitagain.mp3',
-           },
-           {
-             title: 'otherside',
-             artist: 'lena Raine',
-             image: 'images/place.png',
-             audio: 'music/otherside.mp3',
-           },
-           {
-             title: 'Boys a liar pt 1',
-             artist: 'Pink Panther',
-             image: 'images/place.png',
-             audio: 'music/panthers.mp3',
-           },
-         
-           {
-             title: 'Boys a liar pt.2',
-             artist: 'Pink Panthers',
-             image: 'images/place.png',
-             audio: 'music/boy.mp3',
-           },
-             {
-             title: 'Paranoid',
-             artist: '???',
-             image: 'images/place.png',
-             audio: 'music/paranoid.mp3',
-           },
-           
-           
-         ];
-              
-         
-           <script src="/js/aboutblank.js"></script>
-
-      <script src="/js/jquery.min.js"></script>
-      <script src="/js/particles.js"></script>
-      <script src="/js/app.js"></script>
-
-   </body>
-</html>
+</script>
