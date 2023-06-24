@@ -1,0 +1,7 @@
+
+services:
+  - type: web
+    name: genarcy
+    env: docker 
+    plan: free
+ 
