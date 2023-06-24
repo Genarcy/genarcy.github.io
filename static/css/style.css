@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  
+    body {
+      font-family: 'Exo 2', sans-serif;
+       background-image: linear-gradient(to bottom right, #36013f, #431C52, #431C52, #623C74);
+      margin: 0; /* Reset default margin */
+    }
+
+

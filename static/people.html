@@ -1,0 +1,210 @@
+<html>
+<head>
+<link rel="icon" type="image/png" href="images/favicon-32x32.png">
+  <script src=".well-known/pki-validation/6060B5C4C643B080EAA4AD63EB0F4B6F.txt"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genarcy</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-9DIukDzbuwFI7g+CKXeWaCjKk3Dgklv6f5K7k9+Pce6lRURQKc+nWUJQo/0OaCbImAhZYsqNsl44u5bKNTl6BA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/b314b192d4.js" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: linear-gradient(to bottom right, #4C0033, #790252, #AF0171, #E80F88);
+      background-size: cover; /* Change background-size to 'cover' */
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh; /* Add min-height to ensure the content covers the whole screen */
+    }
+
+    /* Rest of the CSS code */
+
+    #canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    #particles-js canvas {
+      background-color: #000;
+    }
+
+    #particles-js .particle {
+      border-radius: 50%;
+      opacity: 0.8;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .lilah {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      margin-bottom: 200px;
+      font-family: "Open Sans", sans-serif;
+    }
+    .porter {
+    border-radius: 20px;
+    border-color: #000;
+    border-width: 5px;
+    box-shadow: #000, 2px;
+    width: 200px; /* Adjust the width to your desired size */
+    height: 50px; /* Adjust the height to your desired size */
+    text-align: center;
+    color: grey;
+    font-size: x-large;
+    transition: font-size 0.5s; /* Add transition only for font-size */
+  }
+
+  .porter:hover {
+    font-size: xx-large; /* Increase the font size on hover */
+  }
+    
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+    .border {
+      border-radius: 5px;
+      border-style: solid white 7px;
+    }
+    text {
+      text-color: white;
+    }
+    image-class {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--NavBar-->
+  <nav class="navbar">
+    <a href="#" style="text-decoration: none;">
+      <div class="navbar-logo">Genarcy</div>
+    </a>
+    <div style="display: flex; align-items: center;">
+      <button class="navbar-toggle" onclick="toggleMenu()">
+        <span class="navbar-toggle-icon"></span>
+        <span class="navbar-toggle-icon"></span>
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <div class="navbar-links" id="navbarLinks">
+        <a href="index.html" class="fa-solid fa-house"></a>
+        <a href="game.html" class="fa-solid fa-gamepad"></a>
+        <a href="people.html" class="fa-solid fa-people-group"></a>
+        <a href="#" class="fa-solid fa-handshake"></a>
+      </div>
+    </div>
+  </nav>
+  <!--end of navbar 0RCA-->
+  <img src="https://i.ibb.co/0Ch4x5S/wallpaper.jpg" style="width: 200px height: 200px" class="center border"></img>
+  <li style="text-color: white;" class="center">Rammerhq And RammerhqAlt</li>
+  <p style="text-color: white;" class="center">
+   My Name is now Golden- I am a Creator of many game repos.
+    I HATE Titanium Network-its Rammerhead is a skid of Testcafe-Hammerhead.
+    I love dogs. My current status- Idle-never 100% online. In the meantime-I play baseball and hangout with friends- I live in San Diego.
+    I respect all but furries
+  </p>
+  <script>
+    var canvas = document.querySelector('canvas');
+    var ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    var particleCount = 50;
+    var particles = [];
+
+    for (var i = 0; i < particleCount; i++) {
+      particles.push(new Particle());
+    }
+
+    function Particle() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.vx = Math.random() * 2 - 1;
+      this.vy = Math.random() * 2 - 1;
+      this.radius = Math.random() * 10 + 10;
+    }
+
+    // Draw particles
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.globalCompositeOperation = "lighter";
+
+      for (var i = 0; i < particleCount; i++) {
+        var p = particles[i];
+
+        ctx.beginPath();
+        var gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius);
+        gradient.addColorStop(0, "rgba(0, 0, 0, 0)");
+        gradient.addColorStop(0.5, "rgba(0, 0, 0, 0)");
+        gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
+        ctx.fillStyle = gradient;
+        ctx.strokeStyle = "#FFFFFF";
+        ctx.lineWidth = 1;
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2, false);
+        ctx.fill();
+        ctx.stroke();
+
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < -50) p.x = canvas.width + 50;
+        if (p.y < -50) p.y = canvas.height + 50;
+        if (p.x > canvas.width + 50) p.x = -50;
+        if (p.y > canvas.height + 50) p.y = -50;
+      }
+
+      requestAnimationFrame(draw);
+    }
+
+    draw();
+
+    window.addEventListener('resize', function () {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+
+    function toggleMenu() {
+      const navbarLinks = document.getElementById('navbarLinks');
+      navbarLinks.classList.toggle('show');
+    }
+
+    function showLoadingIcon() {
+      const loadingIcon = document.getElementById('loadingIcon');
+      loadingIcon.style.display = 'inline-block';
+    }
+  </script>
+  <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+    new Crate({
+        server: '981374268422098954', // Genarcy Development
+        channel: '1008448738957742210' // #🗣-chat
+    })
+</script>
+</body>
+
+</html>
