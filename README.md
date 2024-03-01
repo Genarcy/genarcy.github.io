@@ -1,5 +1,14 @@
-# genarcy.github.io
-A website made by 0rca.
-Big disclaimer The Bypasser wont work on this version of the site because its not supported. this link is only for games. the by passer is on my other link<br>
-Our support email: <a href="mailto:genarcy@gmail.com">genarcy@gmail.com</a><br>
-<a href="https://genarcy.github.io/static/index.html">Click here for just games</a>
+# Genarcy Games
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=10BEF7&lines=Hey+its+0rca+and+smileman52;We+are+the+creators+of+this+site!;Join+our+discord!)](https://git.io/typing-svg)
+
+<br>Thanks to the people helping me on my repo
+<br>The Website:
+<br><link>https://Genarcy.github.io/index.html</link>
+<br>Discord servers:
+<br><link>https://discord.gg/TQxdgggaGM</link>
+<br>[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Genarcy)](https://github.com/anuraghazra/github-readme-stats)
+<br>[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Genarcy)](https://github.com/anuraghazra/github-readme-stats)
+
+### Contributors 
+<img src="https://contrib.rocks/image?repo=Genarcy/Genarcy.github.io" />
