@@ -1,0 +1,79 @@
+
+/* INTRO */
+
+.box:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #B51A1D 0%, #590004 100% );
+    transform: translate3d(0px, 20px, 0) scale(0.95);
+    filter: blur(20px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+.box::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+        
+.box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #181818;
+  border-radius: 20px;
+  z-index: 101;
+  transform: translate(-50%, -50%);
+  margin: 12px;
+  width: 500px;
+  height: 250px;  
+  animation-name: splash;
+  animation-duration: 4s;
+}
+
+
+
+.logo-intro {
+  width: 285px;
+  height: 284px;
+  display: flex;
+}
+
+html, body{
+  margin: 0px;
+}
+
+
+
+@keyframes splash {
+  0%   {left:50%; top:50%;}
+  5%  {left: 50%; top:50%;}
+  100%  {left: 50%; top:200%;}
+}
+
+.blank {
+  width: 100%;
+  height: 100%;
+  background-color: #0F0F0F;
+  position:absolute;
+  z-index: 100;
+}
+
+@keyframes slide-out-blank {
+  0%  {height:100%;}
+  100%  {height:0%;}
+}

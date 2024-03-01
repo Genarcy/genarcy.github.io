@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600;700&display=swap');
+
+
+
+li, a, button {
+    font-family: "Overpass", sans-serif;
+    font-size: 17px;
+    color: #edf0f1;
+    text-decoration: none;
+ padding: auto;
+
+    margin: 0px;
+    margin-bottom: -100px;
+    margin-top: -100px;
+
+
+
+}
+p{
+    font-family: "Overpass", sans-serif;
+      color: rgb(154, 24, 24);
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    padding-bottom: 0%;
+    margin-bottom: 40px;
+      color: rgba(90, 24, 154, 0.1);
+
+
+
+
+    padding-top: 0%;
+
+
+    
+
+    
+
+}
+
+.logo {
+    cursor: pointer;
+
+    padding-bottom: 0%;
+}
+
+.nav__links {
+
+    padding-bottom: 0%;
+
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+
+    padding-bottom: 0%;
+
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+
+    padding-bottom: 0%;
+
+
+}
+
+.nav__links li a:hover {
+    color: rgb(154, 24, 24);
+
+
+
+
+}
+
+
+ul.nav__links {
+
+
+
+}
+
+.logo {
+    height: 60px;
+
+    padding-bottom: 0%;
+
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(154, 24, 24);
+
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+
+
+}
+
+button:hover {
+    background-color: rgba(154, 24, 24, 0.7);
+}
+.text {
+    color: rgb(154, 24, 24);
+    font-size: x-large;
+}

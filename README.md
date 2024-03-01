@@ -6,7 +6,7 @@
 <br>The Website:
 <br><link>https://Genarcy.github.io/index.html</link>
 <br>Discord servers:
-<br><link>https://discord.gg/TQxdgggaGM</link>
+<br><link>https://discord.gg/weSvd7Td2e</link>
 <br>[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Genarcy)](https://github.com/anuraghazra/github-readme-stats)
 <br>[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Genarcy)](https://github.com/anuraghazra/github-readme-stats)
 

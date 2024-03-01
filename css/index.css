@@ -1,0 +1,275 @@
+
+.clickme {
+	background-color: rgb(120, 4, 4);
+	border: none;
+	color: rgb(42, 4, 4);
+	height: 50px;
+	width: 150px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 10px;
+	margin-left: 30px;
+	cursor: pointer;
+	border-radius: 20px;
+	padding-right: 0px;
+	padding-left: 0px;
+
+
+  }
+  #test{
+	padding-top: 24px;
+  }
+
+.item img {
+border-radius: 3%;
+margin-left: 20px
+}
+
+.item {
+display: grid;
+margin-left: 20px;
+}
+
+div.item {
+vertical-align: top;
+display: inline-block;
+width: 188px;
+margin-left: 20px;
+
+}
+.item img {
+width: 188px;
+height: 188px;
+margin-left: 20px;
+}
+.caption {
+display: block;
+display: grid;
+justify-content: left;
+margin-left: 20px;
+}
+
+.button {
+	background-color: rgb(255, 0, 0);
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 9px;
+	margin-bottom: 100px;
+	margin-top: -100px;
+	cursor: pointer;
+	border-radius: 12px;
+	left: 50%;
+	padding-left: 40px;
+width: 100px;
+}
+.button:hover{
+	opacity: 60%;
+}
+
+.topnav {
+overflow: hidden;
+background-color: transparent;
+font-family: Arial;
+z-index: 1;
+left:50%
+}
+
+.topnav a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 20px;
+color: #D2042D;
+}
+
+.topnav a:hover {
+background-color: transparent;
+color: #D2042D;
+
+}
+
+.topnav a.active {
+background-color: transparent;
+color: #D2042D;
+
+}
+
+.topnav input[type=text] {
+float: right;
+padding: 6px;
+margin-top: 8px;
+margin-right: 16px;
+border: none;
+font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+
+.topnav a,
+.topnav input[type=text] {
+	float: none;
+	display: block;
+	text-align: left;
+	width: 100%;
+	margin: 0;
+	padding: 14px;
+}
+
+.topnav input[type=text] {
+	border: 1px solid black;
+}
+}
+
+h1 {
+color: red;
+font-family: Arial;
+}
+
+p {
+color: rgb(48, 10, 160);
+font-family: Arial;
+}
+
+h3 { 
+color: rgb(53, 7, 134);
+font-family: Arial;
+}
+
+h2 { 
+color: rgb(51, 5, 126);
+font-family: Arial;
+}
+
+/* latin */
+@font-face {
+font-family: 'Orbitron';
+font-style: normal;
+font-weight: 400;
+src: url(https://fonts.gstatic.com/s/orbitron/v24/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWgz.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+#clock {
+font-family: 'Orbitron', sans-serif;
+color: #D2042D;
+font-size: 56px;
+text-align: left;
+padding-top: 40px;
+padding-bottom: 40px;
+padding-left: 40px;
+}
+
+.nav {
+text-align: center;
+font-family: Arial;
+}
+
+.nav * {
+box-sizing: border-box;
+transition: all .35s ease;
+}
+
+.nav a {
+padding: .5em .8em;
+position: relative;
+text-decoration: none;
+font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+content: '';
+height: 14px;
+width: 14px;
+position: absolute;
+transition: all .35s ease;
+opacity: 0;
+}
+
+.nav a::before {
+content: '';
+right: 0;
+top: 0;
+border-top: 3px solid #3E8914;
+border-right: 3px solid #2E640F;
+transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+content: '';
+left: 0;
+bottom: 0;
+border-bottom: 3px solid #2E640F;
+border-left: 3px solid #3E8914;
+transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+transform: translate(0, 0);
+opacity: 1;
+
+}
+
+.nav a:hover {
+color: #3DA35D;
+}
+
+.link {
+font-family: Arial;
+font-size: 20px;
+}
+
+body {
+	background-color: black;
+}
+
+.font-arial {
+font-family: Arial;
+}
+
+.white {
+color: white;
+}
+
+#particles-js canvas
+{
+display: block;
+vertical-align: bottom;
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);
+opacity: 1;
+-webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+transition: opacity .8s ease, transform 1.4s ease 
+z-index: -1;
+}
+
+#particles-js 
+{
+width: 100%;
+height: 100%;
+position: fixed;
+z-index: -10;
+top: 0;
+left: 0
+}
+
+canvas
+{
+display:block;
+position: fixed;
+z-index: -1;
+}
+
+
+
+
