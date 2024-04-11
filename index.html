@@ -37,7 +37,22 @@
 </head>
 
 <body style='margin: 0px; padding: 0px;'>
-
+  <script>
+    function create() {
+        var url = document.getElementById('input');
+        var win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+    }
+    </script>
+    
   <style>
     html {
      height: 100%;
@@ -194,8 +209,8 @@ margin-right: -300px;
         <li><a href="/Pages/partners.html">Partners</a></li>
         <li><a href="/Pages/chat.html">Chat</a></li>-->
         <li><a href="/Pages/music.html">Music</a></li>
-
-        <a class="cta" id="buttonclick" onclick="openinblank()"><button>about:blank</button></a>
+        <input type="text" value="https://www.google.com/" placeholder="https://google.com" id='input' autofocus>
+        <button class="cta" id="buttonclick" onclick='create()'>about:blank</button>
       </ul>
     </nav>
   </header>
