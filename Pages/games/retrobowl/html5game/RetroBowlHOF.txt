@@ -1,2 +1,0 @@
-name  rank
-odd 1
