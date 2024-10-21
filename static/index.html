@@ -21,72 +21,76 @@
   <script src="https://kit.fontawesome.com/b314b192d4.js" crossorigin="anonymous"></script>
     <script src="/main.js"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+   
+   @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      background-color: linear-gradient(to bottom right, #4C0033, #790252, #AF0171, #E80F88);
-      background-size: cover; /* Change background-size to 'cover' */
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+body {
+  background-color: linear-gradient(to bottom right, #4C0033, #790252, #AF0171, #E80F88);
+  background-size: cover; /* Change background-size to 'cover' */
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh; /* Add min-height to ensure the content covers the whole screen */
-    }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh; /* Add min-height to ensure the content covers the whole screen */
+}
 
-    /* Rest of the CSS code */
+/* Rest of the CSS code */
 
-    #canvas {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
-    #particles-js canvas {
-      background-color: #000;
-    }
+#particles-js canvas {
+  background-color: #000;
+}
 
-    #particles-js .particle {
-      border-radius: 50%;
-      opacity: 0.8;
-      border: 2px solid rgba(255, 255, 255, 0.5);
-    }
+#particles-js .particle {
+  border-radius: 50%;
+  opacity: 0.8;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
 
-    .lilah {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-      margin-bottom: 200px;
-      font-family: "Open Sans", sans-serif;
-    }
-    .porter {
-    border-radius: 20px;
-    border-color: #000;
-    border-width: 5px;
-    box-shadow: #000, 2px;
-    width: 200px; /* Adjust the width to your desired size */
-    height: 50px; /* Adjust the height to your desired size */
-    text-align: center;
-    color: grey;
-    font-size: x-large;
-    transition: font-size 0.5s; /* Add transition only for font-size */
-  }
+.lilah {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-bottom: 200px;
+  font-family: "Open Sans", sans-serif;
+}
+.porter {
+border-radius: 20px;
+border-color: #000;
+border-width: 5px;
+box-shadow: #000, 2px;
+width: 200px; /* Adjust the width to your desired size */
+height: 50px; /* Adjust the height to your desired size */
+text-align: center;
+color: grey;
+font-size: x-large;
+transition: font-size 0.5s; /* Add transition only for font-size */
+margin-top: 10px;
+margin-bottom: -200px;}
 
-  .porter:hover {
-    font-size: xx-large; /* Increase the font size on hover */
-  }
+
+.porter:hover {
+font-size: xx-large; /* Increase the font size on hover */
+}
+
   </style>
 </head>
 
@@ -108,8 +112,8 @@
       </div>
     </div>
   </nav>  
-  <div style="text-align: center; margin-top: 50px;">
-    <a href="https://discord.gg/BH5EvRqQMz">Join Discord click here</a>
+  <div style="display: flex; justify-content: center; align-items: flex-start; height: 10vh; padding-top: 100px;">
+    <a href="https://discord.gg/BH5EvRqQMz">Join Discord</a>
   </div>
     <!--end of navbar 0RCA-->
   <div class="container">
