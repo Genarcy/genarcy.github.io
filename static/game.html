@@ -2,121 +2,138 @@
 <html>
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9NKTRDWECG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NKTRDWECG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-9NKTRDWECG');
-</script>
-<link rel="icon" type="image/png" href="/assets/con/5.png">  <title>Genarcy</title>
+    gtag('config', 'G-9NKTRDWECG');
+  </script>
+  <link rel="icon" type="image/png" href="/assets/con/5.png">
+  <title>Genarcy</title>
   <link href="/css/navbar.css" rel="stylesheet" type="text/css" />
   <link href="/css/game.css" rel="stylesheet" type="text/css" />
   <script src="https://kit.fontawesome.com/b314b192d4.js" crossorigin="anonymous"></script>
+
   <style>
    @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
-    * {
+   
+   * {
       margin: 0;
       padding: 0;
-    }
-    
-    h1 {
-      text-color: white;
-    }
-  
-    body {
-      font-family: 'Exo 2', sans-serif;
-      margin: 0; /* Reset default margin */
-    }
+      box-sizing: border-box;
+   }
 
-.card {
-  background-color: #0C134F;
-  border: 1px solid #ddd;
-  box-shadow: 0px 0px 5px #ddd;
-  padding: 20px;
-  width: 150px;
-  height: 220px;
-  text-align: center;
-  font-size: 16px;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  display: inline-block;
-  color: #333;
-  margin-bottom: 20px;
-  float: left;
-  margin-right: 20px;
-  border-radius: 10px;
-  transform: scale(1);
-  transition: transform 0.2s ease-in-out;
-  overflow: hidden;
-  box-sizing: border-box;
-  text-decoration: none;
-}
+   html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(to bottom right, #36013f, #431C52, #431C52, #623C74);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
 
-.card img {
-  max-width: 100%;
-  max-height: 80%;
-  object-fit: contain;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  transition: transform 0.2s ease-in-out;
-}
+   a {
+      text-decoration: none;
+   }
 
-.card h2 {
-  margin-top: 0;
-  font-size: 18px;
-  color: #D4ADFC;
-  margin-bottom: 5px;
-}
+   h1 {
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 30px;
+      color: white;
+   }
 
-.card p {
-  margin-bottom: 0;
-  font-size: 16px;
-  color: #D4ADFC;
-  height: 30%;
-}
+   .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: transparent; /* Make the navbar transparent */
+   }
 
-.card:before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  z-index: -1;
-  border-radius: 15px;
-  background-image: linear-gradient(to bottom right, #494F55, #666362, #0C0404, #000000);
-  transition: transform 0.2s ease-in-out;
-  transform-origin: 0% 0%;
-  box-sizing: border-box;
-}
+   .navbar-logo {
+      font-size: 24px;
+      color: white;
+   }
 
-.card:hover:before {
-  transform: scale(1.1);
-}
+   .navbar-links a {
+      color: white;
+      margin-left: 15px;
+      font-size: 20px;
+   }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  perspective: 1000px;
-}
+   .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      perspective: 1000px;
+   }
 
-.card {
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-}
+   .card {
+      background-color: #0C134F;
+      border: 1px solid #ddd;
+      box-shadow: 0px 0px 5px #ddd;
+      padding: 20px;
+      width: 150px;
+      height: 220px;
+      text-align: center;
+      font-size: 16px;
+      margin: 10px;
+      border-radius: 10px;
+      display: inline-block;
+      color: #333;
+      margin-bottom: 20px;
+      float: left;
+      margin-right: 20px;
+      transform: scale(1);
+      transition: transform 0.2s ease-in-out;
+      overflow: hidden;
+   }
 
-.card:hover {
-  transform: scale(1.1) translate(-10px, -10px);
-  z-index: 1;
-  cursor: pointer;
-  text-decoration: none;
-}
+   .card img {
+      max-width: 100%;
+      max-height: 80%;
+      object-fit: contain;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s ease-in-out;
+   }
 
+   .card h2 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #D4ADFC;
+      margin-bottom: 5px;
+   }
+
+   .card:before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+      z-index: -1;
+      border-radius: 15px;
+      background-image: linear-gradient(to bottom right, #494F55, #666362, #0C0404, #000000);
+      transition: transform 0.2s ease-in-out;
+      transform-origin: 0% 0%;
+      box-sizing: border-box;
+   }
+
+   .card:hover:before {
+      transform: scale(1.1);
+   }
+
+   .card:hover {
+      transform: scale(1.1) translate(-10px, -10px);
+      z-index: 1;
+      cursor: pointer;
+   }
   </style>
 </head>
 <body>
@@ -134,33 +151,35 @@
       <div class="navbar-links" id="navbarLinks">
         <a href="index.html" class="fa-solid fa-house"></a>
         <a href="game.html" class="fa-solid fa-gamepad"></a>
-       
       </div>
     </div>
   </nav>
-  <!--end of navbar 0RCA-->
-  <h1 style="margin-top: 100px; color: white;">Games</h1>
+  <!--End of Navbar-->
+
+  <h1>Games</h1>
+
   <div class="card-container"></div>
+
   <script>
-  function toggleMenu() {
-    const navbarLinks = document.getElementById('navbarLinks');
-    navbarLinks.classList.toggle('show');
-  }
-
-  function hideMenu() {
-    const navbarLinks = document.getElementById('navbarLinks');
-    navbarLinks.classList.remove('show');
-  }
-
-  window.addEventListener('resize', function() {
-    const screenWidth = window.innerWidth;
-    if (screenWidth > 600) {
-      hideMenu();
+    function toggleMenu() {
+      const navbarLinks = document.getElementById('navbarLinks');
+      navbarLinks.classList.toggle('show');
     }
-  });
+
+    function hideMenu() {
+      const navbarLinks = document.getElementById('navbarLinks');
+      navbarLinks.classList.remove('show');
+    }
+
+    window.addEventListener('resize', function() {
+      const screenWidth = window.innerWidth;
+      if (screenWidth > 600) {
+        hideMenu();
+      }
+    });
 
     const gameCards = {
-       "card12": {
+      "card12": {
         "title": "Awsome Tanks 2",
         "image": "https://i.ibb.co/tpd7b6j/awesometanks2.jpg",
         "url": "game/awesometanks2.html"
@@ -170,24 +189,22 @@
         "image": "https://i.ibb.co/MPKMbfh/Agar-io-appstore-logo.png",
         "url": "game/agario.html"
       },
-        "card10": {
+      "card10": {
         "title": "Cookie Clicker",
         "image": "https://i.ibb.co/DG8sjwQ/cooke.jpg",
         "url": "game/cookies-now.html"
       },
-   
       "card7": {
         "title": "Subway Surfer",
         "image": "https://i.ibb.co/cYFFXQk/subway.jpg",
         "url": "game/subway.html"
       },
-   
       "card5": {
         "title": "1v1 LOL",
         "image": "https://i.ibb.co/6Z2Jd9M/1v1lol.jpg",
         "url": "game/llvlol.html"
       },
-       "card4": {
+      "card4": {
         "title": "Basketball Stars",
         "image": "https://i.ibb.co/zSS8hYC/basketballstats.jpg",
         "url": "game/basketballstars.html"
@@ -197,7 +214,6 @@
         "image": "https://i.ibb.co/pRp1cMw/among-us.png",
         "url": "game/amoungus"
       },
-  
       "card1": {
         "title": "Gernarcy Discord",
         "image": "https://i.ibb.co/3m8QbXd/discord-png.png",
@@ -205,7 +221,6 @@
       }
     };
 
-    // Sort the game cards by title
     const sortedCards = {};
     Object.keys(gameCards)
       .sort((a, b) => gameCards[a].title.localeCompare(gameCards[b].title))
@@ -225,13 +240,13 @@
       `;
       cardContainer.appendChild(cardElement);
     });
-</script>
+  </script>
+
   <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
     new Crate({
         server: '981374268422098954', // Genarcy Development
         channel: '1008448738957742210' // #🗣-chat
     })
-</script>
-
+  </script>
 </body>
 </html>
